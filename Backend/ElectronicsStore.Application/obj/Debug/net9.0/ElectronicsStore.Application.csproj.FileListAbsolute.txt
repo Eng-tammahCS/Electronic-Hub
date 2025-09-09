@@ -1,0 +1,91 @@
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.deps.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\Electron.5F464B11.Up2Date
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\refint\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ref\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.deps.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\Electron.5F464B11.Up2Date
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\refint\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ref\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.deps.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\Electron.5F464B11.Up2Date
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\refint\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ref\ElectronicsStore.Application.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.deps.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.AssemblyReference.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfoInputs.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfo.cs
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.CoreCompileInputs.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\Electron.5F464B11.Up2Date
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\refint\ElectronicsStore.Application.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ref\ElectronicsStore.Application.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.deps.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.AssemblyReference.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfoInputs.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfo.cs
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.CoreCompileInputs.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\Electron.5F464B11.Up2Date
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\refint\ElectronicsStore.Application.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ref\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.deps.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.sourcelink.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\Electron.5F464B11.Up2Date
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\refint\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Application\obj\Debug\net9.0\ref\ElectronicsStore.Application.dll

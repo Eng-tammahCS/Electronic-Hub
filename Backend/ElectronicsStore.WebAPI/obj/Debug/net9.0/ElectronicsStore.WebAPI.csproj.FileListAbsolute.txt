@@ -1,0 +1,1041 @@
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.staticwebassets.endpoints.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.exe
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.deps.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\scopedcss\bundle\ElectronicsStore.WebAPI.styles.css
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\Electron.D899588F.Up2Date
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\refint\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ref\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Humanizer.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.staticwebassets.endpoints.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.exe
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.deps.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Humanizer.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\scopedcss\bundle\ElectronicsStore.WebAPI.styles.css
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\Electron.D899588F.Up2Date
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\refint\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ref\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.staticwebassets.runtime.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.staticwebassets.endpoints.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.exe
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.deps.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Humanizer.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\scopedcss\bundle\ElectronicsStore.WebAPI.styles.css
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\compressed\u430y6rub4-7cc5fuqxtn.gz
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\Electron.D899588F.Up2Date
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\refint\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ref\ElectronicsStore.WebAPI.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.Development.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.staticwebassets.runtime.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.staticwebassets.endpoints.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.exe
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.deps.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.runtimeconfig.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Core.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Identity.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Humanizer.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.ClientModel.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.CodeDom.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Drawing.Common.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Memory.Data.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Runtime.Caching.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Permissions.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Windows.Extensions.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.AssemblyReference.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfoInputs.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfo.cs
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.CoreCompileInputs.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjimswa.dswa.cache.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\scopedcss\bundle\ElectronicsStore.WebAPI.styles.css
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\compressed\u430y6rub4-7cc5fuqxtn.gz
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.development.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\Electron.D899588F.Up2Date
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\refint\ElectronicsStore.WebAPI.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.genruntimeconfig.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ref\ElectronicsStore.WebAPI.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.Development.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.staticwebassets.endpoints.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.staticwebassets.runtime.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.exe
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.deps.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.runtimeconfig.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Core.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Identity.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Humanizer.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Mono.TextTemplating.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.ClientModel.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.CodeDom.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Convention.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Hosting.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Runtime.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.TypedParts.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Drawing.Common.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Memory.Data.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Runtime.Caching.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Permissions.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Windows.Extensions.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.AssemblyReference.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rpswa.dswa.cache.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfoInputs.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfo.cs
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.CoreCompileInputs.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjimswa.dswa.cache.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\scopedcss\bundle\ElectronicsStore.WebAPI.styles.css
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\compressed\u430y6rub4-7cc5fuqxtn.gz
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.development.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\Electron.D899588F.Up2Date
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\refint\ElectronicsStore.WebAPI.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.genruntimeconfig.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ref\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\appsettings.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.staticwebassets.endpoints.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.staticwebassets.runtime.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.exe
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.deps.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Humanizer.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.sourcelink.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\scopedcss\bundle\ElectronicsStore.WebAPI.styles.css
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\compressed\u430y6rub4-7cc5fuqxtn.gz
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\Electron.D899588F.Up2Date
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\refint\ElectronicsStore.WebAPI.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ElectronicsStore.WebAPI.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.WebAPI\obj\Debug\net9.0\ref\ElectronicsStore.WebAPI.dll

@@ -1,0 +1,1390 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Arabic Electronics Store Management System Design System */
+/* All colors MUST be HSL for proper theme support */
+
+@layer base {
+  :root {
+    /* Brand Colors - Modern Electronics Store Theme */
+    --primary: 214 84% 56%;        /* Modern Blue - #4F8EF7 */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 214 84% 70%;   /* Lighter Primary */
+    
+    --secondary: 151 55% 41.5%;     /* Success Green - #3B9B62 */
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 43 96% 56%;          /* Warning Orange - #FFC107 */
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 84% 60%;      /* Error Red - #DC2626 */
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Background & Surface Colors */
+    --background: 0 0% 100%;       /* Pure White */
+    --foreground: 222 84% 4.9%;    /* Near Black */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+    
+    /* Neutral Colors */
+    --muted: 210 40% 96%;          /* Light Gray */
+    --muted-foreground: 215 16% 47%;
+    
+    --border: 214 32% 91%;         /* Border Gray */
+    --input: 214 32% 91%;
+    --ring: 214 84% 56%;           /* Focus Ring */
+    
+    /* Sidebar Colors */
+    --sidebar-background: 220 30% 12%;       /* Midnight Blue - الأكثر جمالاً */
+    --sidebar-foreground: 210 40% 98%;      /* Pure White */
+    --sidebar-primary: 217 91% 65%;         /* Brighter Blue */
+    --sidebar-primary-foreground: 220 26% 8%; /* Dark Background */
+    --sidebar-accent: 220 13% 12%;          /* Darker Blue Gray */
+    --sidebar-accent-foreground: 210 40% 98%; /* White */
+    --sidebar-border: 220 13% 15%;          /* Subtle Dark Border */
+    --sidebar-ring: 217 91% 65%;            /* Brighter Blue Ring */
+    
+    /* Beautiful Sidebar Background Options */
+    --sidebar-bg-midnight: 220 30% 12%;      /* Midnight Blue - أزرق منتصف الليل */
+    --sidebar-bg-ocean: 210 45% 15%;         /* Ocean Deep - أزرق المحيط العميق */
+    --sidebar-bg-slate: 215 25% 18%;         /* Modern Slate - رمادي أنيق */
+    --sidebar-bg-charcoal: 220 15% 16%;      /* Charcoal Gray - رمادي فحمي */
+    --sidebar-bg-navy: 220 40% 14%;          /* Navy Blue - أزرق بحري */
+    --sidebar-bg-purple: 250 30% 14%;        /* Deep Purple - بنفسجي عميق */
+    
+    /* Enhanced Sidebar Effects */
+    --sidebar-shadow: 0 4px 20px -4px hsl(220 30% 12% / 0.4);
+    --sidebar-glow: 0 0 30px hsl(217 91% 65% / 0.15);
+    --sidebar-gradient: linear-gradient(180deg, hsl(220 30% 12%), hsl(220 35% 10%));
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214, 84%, 56%), hsl(214, 84%, 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(151, 55%, 41.5%), hsl(151, 55%, 55%));
+    --gradient-background: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(210, 40%, 98%));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(214, 84%, 56%, 0.3);
+    --shadow-soft: 0 4px 12px -2px hsl(214, 32%, 91%, 0.8);
+    --shadow-glow: 0 0 40px hsl(214, 84%, 70%, 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Dark Mode Colors */
+    --background: 222 84% 4.9%;    /* Dark Background */
+    --foreground: 210 40% 98%;     /* Light Text */
+    
+    --card: 217 32% 17.5%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 217 32% 17.5%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 214 84% 70%;        /* Brighter Primary in Dark */
+    --primary-foreground: 222 47% 11%;
+    
+    --secondary: 151 55% 50%;      /* Brighter Secondary */
+    --secondary-foreground: 0 0% 0%;
+    
+    --muted: 217 32% 17.5%;
+    --muted-foreground: 215 20% 65%;
+    
+    --accent: 43 96% 65%;          /* Brighter Accent */
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 84% 70%;      /* Brighter Red */
+    --destructive-foreground: 0 0% 0%;
+    
+    --border: 217 32% 17.5%;
+    --input: 217 32% 17.5%;
+    --ring: 214 84% 70%;
+    
+    /* Dark Sidebar */
+    --sidebar-background: 220 30% 12%;       /* Midnight Blue */
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 65%;
+    --sidebar-primary-foreground: 220 26% 8%;
+    --sidebar-accent: 217 32% 12%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 32% 12%;
+    --sidebar-ring: 214 84% 70%;
+    
+    /* Dark Gradients */
+    --gradient-background: linear-gradient(180deg, hsl(222, 84%, 4.9%), hsl(217, 32%, 17.5%));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-tajawal;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    direction: rtl;
+  }
+
+  /* Arabic Text Optimization */
+  .arabic-text {
+    font-family: 'Tajawal', 'Segoe UI', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+  
+  /* Enhanced Focus Styles for Accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Selection Styles */
+  ::selection {
+    background-color: hsl(var(--primary) / 0.2);
+    color: hsl(var(--foreground));
+  }
+}
+
+/* Animations & Interactions */
+@layer components {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-lift:hover {
+    @apply -translate-y-1 shadow-xl;
+  }
+  
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
+  }
+
+  /* Grid Pattern Background */
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 0;
+  }
+  
+  .bg-grid-pattern-fade {
+    background-image: 
+      linear-gradient(hsl(var(--border) / 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.3) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Enhanced Gradients */
+  .gradient-background {
+    background: var(--gradient-background);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+
+  /* Loading States */
+  .loading-dots::after {
+    content: '';
+    animation: loading-dots 1.5s infinite;
+  }
+  
+  /* RTL Specific Adjustments */
+  .sidebar-rtl {
+    @apply border-r-0 border-l;
+    direction: rtl;
+  }
+  
+  .dropdown-rtl {
+    @apply origin-top-right left-0 right-auto;
+    direction: rtl;
+  }
+  
+  /* RTL Layout Fixes */
+  .rtl-layout {
+    direction: rtl;
+  }
+  
+  .rtl-layout .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* RTL Sidebar Layout */
+  .rtl-layout .sidebar {
+    order: 2;
+  }
+  
+  .rtl-layout .main-content {
+    order: 1;
+  }
+  
+  /* RTL Sidebar Positioning */
+  .rtl-layout .sidebar {
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 50;
+  }
+  
+  .rtl-layout .main-content {
+    margin-right: 0;
+  }
+  
+  /* RTL Sidebar Responsive */
+  @media (max-width: 768px) {
+    .rtl-layout .main-content {
+      margin-right: 0;
+    }
+    
+    .rtl-layout .sidebar {
+      position: fixed;
+      right: -100%;
+      top: 0;
+      height: 100vh;
+      z-index: 50;
+      transition: right 0.3s ease-in-out;
+    }
+    
+    .rtl-layout .sidebar.open {
+      right: 0;
+    }
+  }
+  
+  /* RTL Sidebar Animation */
+  .rtl-layout .sidebar {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .rtl-layout .main-content {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* RTL Sidebar Hover Effects */
+  .rtl-layout .sidebar:hover {
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* RTL Sidebar Active State */
+  .rtl-layout .sidebar.active {
+    transform: translateX(0);
+  }
+  
+  .rtl-layout .sidebar.collapsed {
+    transform: translateX(100%);
+  }
+  
+  /* RTL Sidebar Mobile */
+  @media (max-width: 768px) {
+    .rtl-layout .sidebar {
+      position: fixed;
+      right: -100%;
+      top: 0;
+      height: 100vh;
+      z-index: 50;
+      transition: right 0.3s ease-in-out;
+    }
+    
+    .rtl-layout .sidebar.open {
+      right: 0;
+    }
+  }
+  
+  /* Enhanced Sidebar Effects */
+  [dir="rtl"] .sidebar {
+    --sidebar-shadow: 0 4px 20px -4px hsl(var(--sidebar-background) / 0.3);
+    --sidebar-glow: 0 0 30px hsl(var(--sidebar-primary) / 0.1);
+    --sidebar-gradient: linear-gradient(180deg, hsl(var(--sidebar-background)), hsl(var(--sidebar-background) / 0.95));
+  }
+  
+  /* Enhanced RTL Support */
+  [dir="rtl"] {
+    text-align: right;
+  }
+  
+  [dir="rtl"] * {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .text-left {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .text-right {
+    text-align: left;
+  }
+  
+  [dir="rtl"] .text-center {
+    text-align: center;
+  }
+  
+  /* RTL Text Alignment for All Elements */
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] h4,
+  [dir="rtl"] h5,
+  [dir="rtl"] h6,
+  [dir="rtl"] p,
+  [dir="rtl"] span,
+  [dir="rtl"] div,
+  [dir="rtl"] label,
+  [dir="rtl"] button,
+  [dir="rtl"] input,
+  [dir="rtl"] textarea,
+  [dir="rtl"] select,
+  [dir="rtl"] option {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for UI Components */
+  [dir="rtl"] .card,
+  [dir="rtl"] .card-header,
+  [dir="rtl"] .card-content,
+  [dir="rtl"] .card-footer,
+  [dir="rtl"] .table,
+  [dir="rtl"] .table th,
+  [dir="rtl"] .table td,
+  [dir="rtl"] .form-group,
+  [dir="rtl"] .form-label,
+  [dir="rtl"] .form-control,
+  [dir="rtl"] .btn,
+  [dir="rtl"] .alert,
+  [dir="rtl"] .badge,
+  [dir="rtl"] .dropdown-menu,
+  [dir="rtl"] .dropdown-item,
+  [dir="rtl"] .nav,
+  [dir="rtl"] .nav-item,
+  [dir="rtl"] .nav-link,
+  [dir="rtl"] .breadcrumb,
+  [dir="rtl"] .breadcrumb-item,
+  [dir="rtl"] .pagination,
+  [dir="rtl"] .page-item,
+  [dir="rtl"] .page-link,
+  [dir="rtl"] .modal,
+  [dir="rtl"] .modal-header,
+  [dir="rtl"] .modal-body,
+  [dir="rtl"] .modal-footer,
+  [dir="rtl"] .tooltip,
+  [dir="rtl"] .popover,
+  [dir="rtl"] .toast,
+  [dir="rtl"] .toast-header,
+  [dir="rtl"] .toast-body {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for Specific Classes */
+  [dir="rtl"] .text-start {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .text-end {
+    text-align: left;
+  }
+  
+  [dir="rtl"] .text-justify {
+    text-align: justify;
+  }
+  
+  /* RTL Text Alignment for Form Elements */
+  [dir="rtl"] input[type="text"],
+  [dir="rtl"] input[type="email"],
+  [dir="rtl"] input[type="password"],
+  [dir="rtl"] input[type="number"],
+  [dir="rtl"] input[type="tel"],
+  [dir="rtl"] input[type="url"],
+  [dir="rtl"] input[type="search"],
+  [dir="rtl"] textarea,
+  [dir="rtl"] select {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for Placeholders */
+  [dir="rtl"] input::placeholder,
+  [dir="rtl"] textarea::placeholder {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for Lists */
+  [dir="rtl"] ul,
+  [dir="rtl"] ol,
+  [dir="rtl"] li {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for Tables */
+  [dir="rtl"] table,
+  [dir="rtl"] thead,
+  [dir="rtl"] tbody,
+  [dir="rtl"] tfoot,
+  [dir="rtl"] tr,
+  [dir="rtl"] th,
+  [dir="rtl"] td {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for Headers */
+  [dir="rtl"] .header,
+  [dir="rtl"] .header h1,
+  [dir="rtl"] .header h2,
+  [dir="rtl"] .header h3,
+  [dir="rtl"] .header h4,
+  [dir="rtl"] .header h5,
+  [dir="rtl"] .header h6 {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for Sidebar */
+  [dir="rtl"] .sidebar,
+  [dir="rtl"] .sidebar * {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for Main Content */
+  [dir="rtl"] .main-content,
+  [dir="rtl"] .main-content * {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for All Text Elements */
+  [dir="rtl"] *:not(script):not(style):not(meta):not(link):not(title) {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment Override for Specific Cases */
+  [dir="rtl"] .text-center,
+  [dir="rtl"] .text-center * {
+    text-align: center !important;
+  }
+  
+  [dir="rtl"] .text-left,
+  [dir="rtl"] .text-left * {
+    text-align: left !important;
+  }
+  
+  [dir="rtl"] .text-right,
+  [dir="rtl"] .text-right * {
+    text-align: right !important;
+  }
+  
+  /* RTL Text Alignment for Specific Components */
+  [dir="rtl"] .card-title,
+  [dir="rtl"] .card-text,
+  [dir="rtl"] .card-subtitle,
+  [dir="rtl"] .card-link,
+  [dir="rtl"] .btn-text,
+  [dir="rtl"] .btn-label,
+  [dir="rtl"] .form-text,
+  [dir="rtl"] .form-help,
+  [dir="rtl"] .form-error,
+  [dir="rtl"] .form-success,
+  [dir="rtl"] .alert-title,
+  [dir="rtl"] .alert-text,
+  [dir="rtl"] .alert-link,
+  [dir="rtl"] .badge-text,
+  [dir="rtl"] .dropdown-text,
+  [dir="rtl"] .dropdown-link,
+  [dir="rtl"] .nav-text,
+  [dir="rtl"] .nav-link-text,
+  [dir="rtl"] .breadcrumb-text,
+  [dir="rtl"] .breadcrumb-link,
+  [dir="rtl"] .pagination-text,
+  [dir="rtl"] .pagination-link,
+  [dir="rtl"] .modal-title,
+  [dir="rtl"] .modal-text,
+  [dir="rtl"] .modal-link,
+  [dir="rtl"] .tooltip-text,
+  [dir="rtl"] .popover-text,
+  [dir="rtl"] .popover-link,
+  [dir="rtl"] .toast-title,
+  [dir="rtl"] .toast-text,
+  [dir="rtl"] .toast-link {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for All Text Content */
+  [dir="rtl"] body,
+  [dir="rtl"] html,
+  [dir="rtl"] #root,
+  [dir="rtl"] #root * {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for Specific Text Elements */
+  [dir="rtl"] .text-content,
+  [dir="rtl"] .text-content *,
+  [dir="rtl"] .content,
+  [dir="rtl"] .content *,
+  [dir="rtl"] .description,
+  [dir="rtl"] .description *,
+  [dir="rtl"] .title,
+  [dir="rtl"] .title *,
+  [dir="rtl"] .subtitle,
+  [dir="rtl"] .subtitle *,
+  [dir="rtl"] .caption,
+  [dir="rtl"] .caption *,
+  [dir="rtl"] .label,
+  [dir="rtl"] .label *,
+  [dir="rtl"] .text,
+  [dir="rtl"] .text * {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for All Elements - Universal Rule */
+  [dir="rtl"] * {
+    text-align: right;
+  }
+  
+  /* RTL Text Alignment for Specific Overrides */
+  [dir="rtl"] .text-center,
+  [dir="rtl"] .text-center *,
+  [dir="rtl"] .center,
+  [dir="rtl"] .center *,
+  [dir="rtl"] .centered,
+  [dir="rtl"] .centered * {
+    text-align: center !important;
+  }
+  
+  [dir="rtl"] .text-left,
+  [dir="rtl"] .text-left *,
+  [dir="rtl"] .left,
+  [dir="rtl"] .left *,
+  [dir="rtl"] .left-aligned,
+  [dir="rtl"] .left-aligned * {
+    text-align: left !important;
+  }
+  
+  [dir="rtl"] .text-right,
+  [dir="rtl"] .text-right *,
+  [dir="rtl"] .right,
+  [dir="rtl"] .right *,
+  [dir="rtl"] .right-aligned,
+  [dir="rtl"] .right-aligned * {
+    text-align: right !important;
+  }
+  
+  /* RTL Text Alignment for All Text Elements - Final Override */
+  [dir="rtl"] *:not(.text-center):not(.text-left):not(.text-right):not(.center):not(.left):not(.right):not(.centered):not(.left-aligned):not(.right-aligned) {
+    text-align: right !important;
+  }
+  
+  /* RTL Text Alignment for All Text Elements - Final Override for Children */
+  [dir="rtl"] *:not(.text-center):not(.text-left):not(.text-right):not(.center):not(.left):not(.right):not(.centered):not(.left-aligned):not(.right-aligned) * {
+    text-align: right !important;
+  }
+  
+  /* RTL Text Alignment for All Elements - Universal Override */
+  [dir="rtl"] * {
+    text-align: right !important;
+  }
+  
+  /* RTL Text Alignment for Specific Overrides - Final */
+  [dir="rtl"] .text-center,
+  [dir="rtl"] .text-center *,
+  [dir="rtl"] .center,
+  [dir="rtl"] .center *,
+  [dir="rtl"] .centered,
+  [dir="rtl"] .centered * {
+    text-align: center !important;
+  }
+  
+  [dir="rtl"] .text-left,
+  [dir="rtl"] .text-left *,
+  [dir="rtl"] .left,
+  [dir="rtl"] .left *,
+  [dir="rtl"] .left-aligned,
+  [dir="rtl"] .left-aligned * {
+    text-align: left !important;
+  }
+  
+  [dir="rtl"] .text-right,
+  [dir="rtl"] .text-right *,
+  [dir="rtl"] .right,
+  [dir="rtl"] .right *,
+  [dir="rtl"] .right-aligned,
+  [dir="rtl"] .right-aligned * {
+    text-align: right !important;
+  }
+  
+  /* RTL Text Alignment for All Text Elements - Universal Override */
+  [dir="rtl"] * {
+    text-align: right !important;
+  }
+  
+  /* RTL Text Alignment for Specific Overrides - Final */
+  [dir="rtl"] .text-center,
+  [dir="rtl"] .text-center *,
+  [dir="rtl"] .center,
+  [dir="rtl"] .center *,
+  [dir="rtl"] .centered,
+  [dir="rtl"] .centered * {
+    text-align: center !important;
+  }
+  
+  [dir="rtl"] .text-left,
+  [dir="rtl"] .text-left *,
+  [dir="rtl"] .left,
+  [dir="rtl"] .left *,
+  [dir="rtl"] .left-aligned,
+  [dir="rtl"] .left-aligned * {
+    text-align: left !important;
+  }
+  
+  [dir="rtl"] .text-right,
+  [dir="rtl"] .text-right *,
+  [dir="rtl"] .right,
+  [dir="rtl"] .right *,
+  [dir="rtl"] .right-aligned,
+  [dir="rtl"] .right-aligned * {
+    text-align: right !important;
+  }
+  
+  /* RTL Text Alignment for All Text Elements - Universal Override */
+  [dir="rtl"] * {
+    text-align: right !important;
+  }
+  
+  /* RTL Text Alignment for Specific Overrides - Final */
+  [dir="rtl"] .text-center,
+  [dir="rtl"] .text-center *,
+  [dir="rtl"] .center,
+  [dir="rtl"] .center *,
+  [dir="rtl"] .centered,
+  [dir="rtl"] .centered * {
+    text-align: center !important;
+  }
+  
+  [dir="rtl"] .text-left,
+  [dir="rtl"] .text-left *,
+  [dir="rtl"] .left,
+  [dir="rtl"] .left *,
+  [dir="rtl"] .left-aligned,
+  [dir="rtl"] .left-aligned * {
+    text-align: left !important;
+  }
+  
+  [dir="rtl"] .text-right,
+  [dir="rtl"] .text-right *,
+  [dir="rtl"] .right,
+  [dir="rtl"] .right *,
+  [dir="rtl"] .right-aligned,
+  [dir="rtl"] .right-aligned * {
+    text-align: right !important;
+  }
+  
+  /* RTL Text Alignment for All Text Elements - Universal Override */
+  [dir="rtl"] * {
+    text-align: right !important;
+  }
+  
+  /* RTL Text Alignment for Specific Overrides - Final */
+  [dir="rtl"] .text-center,
+  [dir="rtl"] .text-center *,
+  [dir="rtl"] .center,
+  [dir="rtl"] .center *,
+  [dir="rtl"] .centered,
+  [dir="rtl"] .centered * {
+    text-align: center !important;
+  }
+  
+  [dir="rtl"] .text-left,
+  [dir="rtl"] .text-left *,
+  [dir="rtl"] .left,
+  [dir="rtl"] .left *,
+  [dir="rtl"] .left-aligned,
+  [dir="rtl"] .left-aligned * {
+    text-align: left !important;
+  }
+  
+  [dir="rtl"] .text-right,
+  [dir="rtl"] .text-right *,
+  [dir="rtl"] .right,
+  [dir="rtl"] .right *,
+  [dir="rtl"] .right-aligned,
+  [dir="rtl"] .right-aligned * {
+    text-align: right !important;
+  }
+  
+  [dir="rtl"] .ml-auto {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  [dir="rtl"] .mr-auto {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
+  [dir="rtl"] .pl-4 {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  
+  [dir="rtl"] .pr-4 {
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+  
+  [dir="rtl"] .border-l {
+    border-left: none;
+    border-right: 1px solid;
+  }
+  
+  [dir="rtl"] .border-r {
+    border-right: none;
+    border-left: 1px solid;
+  }
+  
+  /* RTL Input and Form Elements */
+  [dir="rtl"] input[type="text"],
+  [dir="rtl"] input[type="email"],
+  [dir="rtl"] input[type="password"],
+  [dir="rtl"] textarea {
+    text-align: right;
+  }
+  
+  [dir="rtl"] input::placeholder {
+    text-align: right;
+  }
+  
+  /* RTL Dropdown and Menu Positioning */
+  [dir="rtl"] [data-radix-popper-content-wrapper] {
+    transform-origin: top right;
+  }
+  
+  /* RTL Sidebar Positioning */
+  [dir="rtl"] .sidebar {
+    left: 0;
+    right: auto;
+  }
+  
+  [dir="rtl"] .sidebar-content {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  /* RTL Sidebar Border Fix */
+  [dir="rtl"] .sidebar {
+    border-right: none;
+    border-left: 1px solid hsl(var(--sidebar-border));
+  }
+  
+  /* RTL Sidebar Positioning */
+  [dir="rtl"] .sidebar {
+    right: 0;
+    left: auto;
+  }
+  
+  /* RTL Sidebar Content */
+  [dir="rtl"] .sidebar-content {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
+  /* RTL Sidebar Main Content */
+  [dir="rtl"] .main-content {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  /* RTL Sidebar Responsive */
+  @media (max-width: 768px) {
+    [dir="rtl"] .main-content {
+      margin-right: 0;
+    }
+    
+    [dir="rtl"] .sidebar {
+      position: fixed;
+      right: -100%;
+      top: 0;
+      height: 100vh;
+      z-index: 50;
+      transition: right 0.3s ease-in-out;
+    }
+    
+    [dir="rtl"] .sidebar.open {
+      right: 0;
+    }
+  }
+  
+  /* RTL Sidebar Animation */
+  [dir="rtl"] .sidebar {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  [dir="rtl"] .main-content {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* RTL Sidebar Hover Effects */
+  [dir="rtl"] .sidebar:hover {
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* RTL Sidebar Active State */
+  [dir="rtl"] .sidebar.active {
+    transform: translateX(0);
+  }
+  
+  [dir="rtl"] .sidebar.collapsed {
+    transform: translateX(100%);
+  }
+  
+  /* RTL Sidebar Mobile */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar {
+      position: fixed;
+      right: -100%;
+      top: 0;
+      height: 100vh;
+      z-index: 50;
+      transition: right 0.3s ease-in-out;
+    }
+    
+    [dir="rtl"] .sidebar.open {
+      right: 0;
+    }
+  }
+  
+  /* RTL Sidebar Z-Index */
+  [dir="rtl"] .sidebar {
+    z-index: 50;
+  }
+  
+  /* RTL Sidebar Width */
+  [dir="rtl"] .sidebar {
+    width: 16rem;
+  }
+  
+  /* RTL Sidebar Height */
+  [dir="rtl"] .sidebar {
+    height: 100vh;
+  }
+  
+  /* RTL Sidebar Background */
+  [dir="rtl"] .sidebar {
+    background-color: hsl(var(--sidebar));
+  }
+  
+  /* RTL Sidebar Border */
+  [dir="rtl"] .sidebar {
+    border-left: 1px solid hsl(var(--sidebar-border));
+    border-right: none;
+  }
+  
+  /* RTL Sidebar Shadow */
+  [dir="rtl"] .sidebar {
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* RTL Sidebar Overflow */
+  [dir="rtl"] .sidebar {
+    overflow-y: auto;
+  }
+  
+  /* RTL Sidebar Scrollbar */
+  [dir="rtl"] .sidebar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  [dir="rtl"] .sidebar::-webkit-scrollbar-track {
+    background: hsl(var(--sidebar));
+  }
+  
+  [dir="rtl"] .sidebar::-webkit-scrollbar-thumb {
+    background: hsl(var(--sidebar-border));
+    border-radius: 3px;
+  }
+  
+  /* RTL Sidebar Hover Scrollbar */
+  [dir="rtl"] .sidebar::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--sidebar-foreground));
+  }
+  
+  /* RTL Sidebar Focus */
+  [dir="rtl"] .sidebar:focus {
+    outline: none;
+  }
+  
+  /* RTL Sidebar Active */
+  [dir="rtl"] .sidebar.active {
+    transform: translateX(0);
+  }
+  
+  /* RTL Sidebar Collapsed */
+  [dir="rtl"] .sidebar.collapsed {
+    transform: translateX(100%);
+  }
+  
+  /* RTL Sidebar Transition */
+  [dir="rtl"] .sidebar {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* RTL Sidebar Hover */
+  [dir="rtl"] .sidebar:hover {
+    box-shadow: -2px 0 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* RTL Sidebar Mobile Hover */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar:hover {
+      box-shadow: none;
+    }
+  }
+  
+  /* RTL Sidebar Mobile Active */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar.active {
+      transform: translateX(0);
+    }
+  }
+  
+  /* RTL Sidebar Mobile Collapsed */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar.collapsed {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* RTL Sidebar Mobile Transition */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar {
+      transition: right 0.3s ease-in-out;
+    }
+  }
+  
+  /* RTL Sidebar Mobile Open */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar.open {
+      right: 0;
+    }
+  }
+  
+  /* RTL Sidebar Mobile Closed */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar.closed {
+      right: -100%;
+    }
+  }
+  
+  /* RTL Sidebar Mobile Z-Index */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar {
+      z-index: 50;
+    }
+  }
+  
+  /* RTL Sidebar Mobile Height */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar {
+      height: 100vh;
+    }
+  }
+  
+  /* RTL Sidebar Mobile Width */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar {
+      width: 16rem;
+    }
+  }
+  
+  /* RTL Sidebar Mobile Background */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar {
+      background-color: hsl(var(--sidebar));
+    }
+  }
+  
+  /* RTL Sidebar Mobile Border */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar {
+      border-left: 1px solid hsl(var(--sidebar-border));
+      border-right: none;
+    }
+  }
+  
+  /* RTL Sidebar Mobile Shadow */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar {
+      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  /* RTL Sidebar Mobile Overflow */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar {
+      overflow-y: auto;
+    }
+  }
+  
+  /* RTL Sidebar Mobile Scrollbar */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    [dir="rtl"] .sidebar::-webkit-scrollbar-track {
+      background: hsl(var(--sidebar));
+    }
+    
+    [dir="rtl"] .sidebar::-webkit-scrollbar-thumb {
+      background: hsl(var(--sidebar-border));
+      border-radius: 3px;
+    }
+    
+    [dir="rtl"] .sidebar::-webkit-scrollbar-thumb:hover {
+      background: hsl(var(--sidebar-foreground));
+    }
+  }
+  
+  /* RTL Sidebar Mobile Focus */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar:focus {
+      outline: none;
+    }
+  }
+  
+  /* RTL Sidebar Mobile Active */
+  @media (max-width: 768px) {
+    [dir="rtl"] .sidebar.active {
+      transform: translateX(0);
+    }
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes loading-dots {
+  0%, 20% {
+    color: transparent;
+    text-shadow: 0.25em 0 0 transparent, 0.5em 0 0 transparent;
+  }
+  40% {
+    color: hsl(var(--primary));
+    text-shadow: 0.25em 0 0 transparent, 0.5em 0 0 transparent;
+  }
+  60% {
+    text-shadow: 0.25em 0 0 hsl(var(--primary)), 0.5em 0 0 transparent;
+  }
+  80%, 100% {
+    text-shadow: 0.25em 0 0 hsl(var(--primary)), 0.5em 0 0 hsl(var(--primary));
+  }
+}
+
+/* Custom animations using Tailwind CSS */
+
+/* Custom gradient text animation */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease infinite;
+}
+
+/* Smooth fade in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+/* Enhanced button hover effects */
+@keyframes button-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px hsl(var(--primary) / 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.8);
+  }
+}
+
+.btn-glow:hover {
+  animation: button-glow 2s ease-in-out infinite;
+}
+
+/* Card hover effects */
+@keyframes card-lift {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  animation: card-lift 0.3s ease-out forwards;
+}
+
+/* Loading shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, hsl(var(--muted)) 25%, hsl(var(--muted-foreground) / 0.3) 50%, hsl(var(--muted)) 75%);
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Pulse animation for notifications */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.33);
+    opacity: 1;
+  }
+  40%, 50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Slide in from left */
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.5s ease-out;
+}
+
+/* Slide in from right */
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slide-in-right 0.5s ease-out;
+}
+
+/* Scale in animation */
+@keyframes scale-in {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scale-in {
+  animation: scale-in 0.3s ease-out;
+}
+
+/* Bounce in animation */
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.bounce-in {
+  animation: bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Stagger animation for lists */
+.stagger-item {
+  opacity: 0;
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0.1s; }
+.stagger-item:nth-child(2) { animation-delay: 0.2s; }
+.stagger-item:nth-child(3) { animation-delay: 0.3s; }
+.stagger-item:nth-child(4) { animation-delay: 0.4s; }
+.stagger-item:nth-child(5) { animation-delay: 0.5s; }
+.stagger-item:nth-child(6) { animation-delay: 0.6s; }
+
+/* Enhanced focus states */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px hsl(var(--ring) / 0.5);
+  transition: box-shadow 0.2s ease;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground));
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced glass for login page */
+.glass-login {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,115 @@
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.deps.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\Electron.29772A88.Up2Date
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\refint\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ref\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.deps.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\Electron.29772A88.Up2Date
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\refint\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\New folder (2)\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ref\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.deps.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\Electron.29772A88.Up2Date
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\refint\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\new\Finnal_Project\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ref\ElectronicsStore.Infrastructure.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.deps.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.runtimeconfig.json
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.AssemblyReference.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfoInputs.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfo.cs
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.CoreCompileInputs.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\Electron.29772A88.Up2Date
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\refint\ElectronicsStore.Infrastructure.dll
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.genruntimeconfig.cache
+D:\مستوى ثالث\المشروع\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ref\ElectronicsStore.Infrastructure.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.deps.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.runtimeconfig.json
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.AssemblyReference.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfoInputs.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfo.cs
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.CoreCompileInputs.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\Electron.29772A88.Up2Date
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\refint\ElectronicsStore.Infrastructure.dll
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.genruntimeconfig.cache
+F:\مشاريع\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ref\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.deps.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\bin\Debug\net9.0\ElectronicsStore.Application.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.sourcelink.json
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\Electron.29772A88.Up2Date
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\refint\ElectronicsStore.Infrastructure.dll
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.pdb
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ElectronicsStore.Infrastructure.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\v4\v5\project_v4\project_v4\Backend\ElectronicsStore.Infrastructure\obj\Debug\net9.0\ref\ElectronicsStore.Infrastructure.dll
