@@ -329,6 +329,16 @@ public class SalesInvoiceService : ISalesInvoiceService
         return await CreateSalesInvoiceAsync(dto, 1); // TODO: Get actual user ID from context
     }
 
+
+    // Return functionality will be added later
+    /*
+    public async Task<IEnumerable<SalesInvoiceDto>> GetReturnedInvoicesAsync()
+    {
+        // Implementation will be added later
+        throw new NotImplementedException("Return functionality will be added later");
+    }
+    */
+
     public async Task<SalesInvoiceDto?> UpdateSalesInvoiceAsync(int id, UpdateSalesInvoiceDto dto, int userId)
     {
         var existingInvoice = await _unitOfWork.SalesInvoices.GetByIdAsync(id);
@@ -340,3 +350,4 @@ public class SalesInvoiceService : ISalesInvoiceService
         throw new NotImplementedException("Update functionality not yet implemented");
     }
 }
+

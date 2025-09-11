@@ -69,6 +69,16 @@ class PurchaseReturnService {
   async getPurchaseReturnsByDateRange(startDate: string, endDate: string): Promise<ApiResponse<PurchaseReturn[]>> {
     return apiService.get<PurchaseReturn[]>(`${this.baseEndpoint}/date-range?startDate=${startDate}&endDate=${endDate}`);
   }
+
+  // Get purchase returns by product
+  async getPurchaseReturnsByProduct(productId: number): Promise<ApiResponse<PurchaseReturn[]>> {
+    return apiService.get<PurchaseReturn[]>(`${this.baseEndpoint}/product/${productId}`);
+  }
+
+  // Get purchase returns by supplier
+  async getPurchaseReturnsBySupplier(supplierId: number): Promise<ApiResponse<PurchaseReturn[]>> {
+    return apiService.get<PurchaseReturn[]>(`${this.baseEndpoint}/supplier/${supplierId}`);
+  }
 }
 
 export const purchaseReturnService = new PurchaseReturnService();

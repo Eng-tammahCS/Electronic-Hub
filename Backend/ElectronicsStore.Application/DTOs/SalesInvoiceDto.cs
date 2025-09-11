@@ -19,6 +19,9 @@ public class SalesInvoiceDto
     public string Username { get; set; } = string.Empty;
     public DateTime CreatedAt { get; set; }
     public List<SalesInvoiceDetailDto> Details { get; set; } = new();
+    public bool IsReturned { get; set; }
+    public DateTime? ReturnDate { get; set; }
+    public string? ReturnReason { get; set; }
 }
 
 public class SalesInvoiceDetailDto

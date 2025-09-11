@@ -475,6 +475,9 @@ public class SalesInvoicesController : ControllerBase
         }
     }
 
+    // Return functionality will be added later
+    // Endpoints will be added when return feature is implemented
+
     private string GetPaymentMethodText(PaymentMethod paymentMethod)
     {
         return paymentMethod switch
@@ -485,4 +488,10 @@ public class SalesInvoicesController : ControllerBase
             _ => "غير محدد"
         };
     }
+}
+
+// DTO for return invoice request
+public class ReturnInvoiceRequestDto
+{
+    public string? Reason { get; set; }
 }

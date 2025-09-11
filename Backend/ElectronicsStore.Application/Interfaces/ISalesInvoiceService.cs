@@ -12,4 +12,7 @@ public interface ISalesInvoiceService
     Task<SalesInvoiceDto> CreateSalesInvoiceAsync(CreateSalesInvoiceDto dto);
     Task<SalesInvoiceDto?> UpdateSalesInvoiceAsync(int id, UpdateSalesInvoiceDto dto, int userId);
     Task DeleteSalesInvoiceAsync(int id);
+    // Return functionality will be added later
+    // Task<ReturnInvoiceResultDto> ReturnSalesInvoiceAsync(int invoiceId, string? reason, int userId);
+    // Task<IEnumerable<SalesInvoiceDto>> GetReturnedInvoicesAsync();
 }

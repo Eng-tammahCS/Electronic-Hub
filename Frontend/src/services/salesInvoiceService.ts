@@ -17,6 +17,9 @@ export interface SalesInvoice {
   username: string;
   createdAt: string;
   details: SalesInvoiceDetail[];
+  isReturned?: boolean;
+  returnDate?: string;
+  returnReason?: string;
 }
 
 export interface SalesInvoiceDetail {
@@ -48,6 +51,26 @@ export interface CreateSalesInvoiceDetailRequest {
 export interface UpdateSalesInvoiceRequest extends Partial<CreateSalesInvoiceRequest> {
   id: number;
 }
+
+// Temporarily commented out until database migration is done
+/*
+export interface ReturnInvoiceResult {
+  success: boolean;
+  message: string;
+  invoiceId: number;
+  invoiceNumber: string;
+  totalRefundAmount: number;
+  returnedItems: ReturnedItem[];
+  returnDate: string;
+}
+
+export interface ReturnedItem {
+  productId: number;
+  productName: string;
+  quantity: number;
+  refundAmount: number;
+}
+*/
 
 // Sales Invoice Service Class
 class SalesInvoiceService {
@@ -82,6 +105,19 @@ class SalesInvoiceService {
   async getSalesInvoicesByDateRange(startDate: string, endDate: string): Promise<ApiResponse<SalesInvoice[]>> {
     return apiService.get<SalesInvoice[]>(`${this.baseEndpoint}/date-range?startDate=${startDate}&endDate=${endDate}`);
   }
+
+  // Temporarily commented out until database migration is done
+  /*
+  // Return entire sales invoice
+  async returnSalesInvoice(invoiceId: number, reason?: string): Promise<ApiResponse<ReturnInvoiceResult>> {
+    return apiService.post<ReturnInvoiceResult>(`${this.baseEndpoint}/${invoiceId}/return`, { reason });
+  }
+
+  // Get returned invoices
+  async getReturnedInvoices(): Promise<ApiResponse<SalesInvoice[]>> {
+    return apiService.get<SalesInvoice[]>(`${this.baseEndpoint}/returned`);
+  }
+  */
 
   // Get sales invoices by customer
   async getSalesInvoicesByCustomer(customerName: string): Promise<ApiResponse<SalesInvoice[]>> {

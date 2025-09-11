@@ -49,7 +49,22 @@ class ReturnsSummaryService {
 
   // Get top return reasons
   async getTopReturnReasons(limit: number = 10): Promise<ApiResponse<TopReturnReason[]>> {
-    return apiService.get<TopReturnReason[]>(`${this.baseEndpoint}/top-reasons?limit=${limit}`);
+    return apiService.get<TopReturnReason[]>(`${this.baseEndpoint}/top-reasons?count=${limit}`);
+  }
+
+  // Get returns stats by date range
+  async getReturnsStatsByDateRange(startDate: string, endDate: string): Promise<ApiResponse<any>> {
+    return apiService.get<any>(`${this.baseEndpoint}/stats?startDate=${startDate}&endDate=${endDate}`);
+  }
+
+  // Check if sales item can be returned
+  async canReturnSalesItem(salesInvoiceId: number, productId: number, quantity: number): Promise<ApiResponse<{ canReturn: boolean }>> {
+    return apiService.get<{ canReturn: boolean }>(`${this.baseEndpoint}/can-return-sales?salesInvoiceId=${salesInvoiceId}&productId=${productId}&quantity=${quantity}`);
+  }
+
+  // Check if purchase item can be returned
+  async canReturnPurchaseItem(purchaseInvoiceId: number, productId: number, quantity: number): Promise<ApiResponse<{ canReturn: boolean }>> {
+    return apiService.get<{ canReturn: boolean }>(`${this.baseEndpoint}/can-return-purchase?purchaseInvoiceId=${purchaseInvoiceId}&productId=${productId}&quantity=${quantity}`);
   }
 }
 

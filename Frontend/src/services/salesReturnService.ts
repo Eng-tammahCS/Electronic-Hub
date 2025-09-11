@@ -68,6 +68,16 @@ class SalesReturnService {
   async getSalesReturnsByDateRange(startDate: string, endDate: string): Promise<ApiResponse<SalesReturn[]>> {
     return apiService.get<SalesReturn[]>(`${this.baseEndpoint}/date-range?startDate=${startDate}&endDate=${endDate}`);
   }
+
+  // Get sales returns by product
+  async getSalesReturnsByProduct(productId: number): Promise<ApiResponse<SalesReturn[]>> {
+    return apiService.get<SalesReturn[]>(`${this.baseEndpoint}/product/${productId}`);
+  }
+
+  // Get sales returns by customer
+  async getSalesReturnsByCustomer(customerName: string): Promise<ApiResponse<SalesReturn[]>> {
+    return apiService.get<SalesReturn[]>(`${this.baseEndpoint}/customer/${encodeURIComponent(customerName)}`);
+  }
 }
 
 export const salesReturnService = new SalesReturnService();
