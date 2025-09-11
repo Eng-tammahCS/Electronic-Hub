@@ -37,6 +37,7 @@ import { apiService } from "@/services/apiService";
 import { API_CONFIG } from "@/config/api";
 import { PaymentMethod } from "@/services/apiService";
 import { salesService } from "@/services/salesService";
+import { useAuth } from "@/contexts/AuthContext";
 
 // Import Product type from productService
 import { Product } from "@/services/productService";
@@ -61,6 +62,7 @@ interface Customer {
 }
 
 export function POSPage() {
+  const { user, isAuthenticated } = useAuth();
   const [cart, setCart] = useState<CartItem[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCustomer, setSelectedCustomer] = useState<Customer | null>(null);
@@ -75,6 +77,20 @@ export function POSPage() {
   const [isCategoryDialogOpen, setIsCategoryDialogOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<any>(null);
   const { toast } = useToast();
+
+  // Check authentication
+  console.log('POSPage: Authentication status:', { isAuthenticated, user });
+  
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold mb-4">يجب تسجيل الدخول أولاً</h2>
+          <p className="text-muted-foreground">يرجى تسجيل الدخول للوصول إلى نقطة البيع</p>
+        </div>
+      </div>
+    );
+  }
 
   // Fetch categories
   const { 
@@ -316,6 +332,22 @@ export function POSPage() {
       return;
     }
 
+    // Check authentication before processing
+    console.log('processSale: Authentication check:', { 
+      isAuthenticated, 
+      user, 
+      hasToken: !!apiService.getCurrentToken() 
+    });
+
+    if (!isAuthenticated) {
+      toast({
+        title: "خطأ في المصادقة",
+        description: "يجب تسجيل الدخول أولاً",
+        variant: "destructive"
+      });
+      return;
+    }
+
     setIsProcessing(true);
 
     try {
@@ -325,7 +357,7 @@ export function POSPage() {
       // Prepare sale data - matching backend DTO structure
       const saleData = {
         invoiceNumber,
-        customerName: selectedCustomer?.name ?? null,
+        customerName: selectedCustomer?.name ?? "عميل غير محدد",
         invoiceDate: new Date().toISOString(),
         discountTotal: discountAmount,
         paymentMethod: paymentMethod,
@@ -336,10 +368,19 @@ export function POSPage() {
           discountAmount: 0 // Individual item discount (can be extended later)
         }))
       };
+      
+      // Log customer name encoding for debugging
+      console.log('Customer name before sending:', saleData.customerName);
+      console.log('Customer name bytes:', new TextEncoder().encode(saleData.customerName));
 
       console.log('Sending sale data:', saleData);
       console.log('Payment method value:', paymentMethod);
       console.log('Payment method type:', typeof paymentMethod);
+      console.log('Payment method enum values:', {
+        Cash: PaymentMethod.Cash,
+        Card: PaymentMethod.Card,
+        Deferred: PaymentMethod.Deferred
+      });
       console.log('Cart items:', cart);
       console.log('Discount amount:', discountAmount);
       console.log('Total:', total);

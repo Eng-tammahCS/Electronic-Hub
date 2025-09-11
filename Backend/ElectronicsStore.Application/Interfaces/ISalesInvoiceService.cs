@@ -10,5 +10,6 @@ public interface ISalesInvoiceService
     Task<IEnumerable<SalesInvoiceDto>> GetSalesInvoicesByDateRangeAsync(DateTime startDate, DateTime endDate);
     Task<SalesInvoiceDto> CreateSalesInvoiceAsync(CreateSalesInvoiceDto dto, int userId);
     Task<SalesInvoiceDto> CreateSalesInvoiceAsync(CreateSalesInvoiceDto dto);
+    Task<SalesInvoiceDto?> UpdateSalesInvoiceAsync(int id, UpdateSalesInvoiceDto dto, int userId);
     Task DeleteSalesInvoiceAsync(int id);
 }

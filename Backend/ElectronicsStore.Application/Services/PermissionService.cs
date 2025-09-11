@@ -407,9 +407,9 @@ public class PermissionService : IPermissionService
         }
     }
 
-    public async Task<IEnumerable<string>> GetSystemPermissionNames()
+    public Task<IEnumerable<string>> GetSystemPermissionNames()
     {
-        return new List<string>
+        return Task.FromResult<IEnumerable<string>>(new List<string>
         {
             "VIEW_DASHBOARD",
             "CREATE_USER", "UPDATE_USER", "DELETE_USER", "VIEW_USERS",
@@ -419,7 +419,7 @@ public class PermissionService : IPermissionService
             "CREATE_INVOICE", "UPDATE_INVOICE", "DELETE_INVOICE", "VIEW_INVOICES",
             "CREATE_EXPENSE", "UPDATE_EXPENSE", "DELETE_EXPENSE", "VIEW_EXPENSES",
             "VIEW_REPORTS", "VIEW_DASHBOARD"
-        };
+        });
     }
 
     private PermissionDto MapToPermissionDto(Permission permission)

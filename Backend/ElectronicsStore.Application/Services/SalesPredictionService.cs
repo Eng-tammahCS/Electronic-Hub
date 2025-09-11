@@ -58,20 +58,20 @@ public class SalesPredictionService : ISalesPredictionService
             // تحويل الاستجابة إلى DTO
             return new SalesPredictionDto
             {
-                PredictedSales = (decimal)mlResponse.Data.PredictedSales,
+                PredictedSales = (decimal)(mlResponse.Data?.PredictedSales ?? 0),
                 Confidence = 0.95, // النموذج لا يعطي confidence، نستخدم قيمة افتراضية
-                PredictionDate = DateTime.Parse(mlResponse.Data.Date),
+                PredictionDate = DateTime.Parse(mlResponse.Data?.Date ?? DateTime.Now.ToString()),
                 ModelName = "Random Forest", // النموذج المستخدم
                 Features = new PredictionFeaturesDto
                 {
-                    DayOfWeek = GetDayOfWeekInArabic(DateTime.Parse(mlResponse.Data.Date).DayOfWeek),
-                    Month = GetMonthInArabic(DateTime.Parse(mlResponse.Data.Date).Month),
-                    Year = DateTime.Parse(mlResponse.Data.Date).Year,
+                    DayOfWeek = GetDayOfWeekInArabic(DateTime.Parse(mlResponse.Data?.Date ?? DateTime.Now.ToString()).DayOfWeek),
+                    Month = GetMonthInArabic(DateTime.Parse(mlResponse.Data?.Date ?? DateTime.Now.ToString()).Month),
+                    Year = DateTime.Parse(mlResponse.Data?.Date ?? DateTime.Now.ToString()).Year,
                     LastWeekAverage = await GetLastWeekAverage(),
                     LastMonthAverage = await GetLastMonthAverage(),
                     LastYearAverage = await GetLastYearAverage()
                 },
-                Recommendations = GenerateRecommendations(mlResponse.Data.PredictedSales)
+                Recommendations = GenerateRecommendations(mlResponse.Data?.PredictedSales ?? 0)
             };
         }
         catch (Exception ex)
@@ -173,7 +173,7 @@ public class SalesPredictionService : ISalesPredictionService
                 
                 if (summary?.Success == true)
                 {
-                    return (decimal)summary.Data.SalesStats.AverageDailySales;
+                    return (decimal)(summary.Data?.SalesStats?.AverageDailySales ?? 0);
                 }
             }
         }
@@ -200,7 +200,7 @@ public class SalesPredictionService : ISalesPredictionService
                 
                 if (summary?.Success == true)
                 {
-                    return (decimal)summary.Data.SalesStats.AverageDailySales;
+                    return (decimal)(summary.Data?.SalesStats?.AverageDailySales ?? 0);
                 }
             }
         }
@@ -227,7 +227,7 @@ public class SalesPredictionService : ISalesPredictionService
                 
                 if (summary?.Success == true)
                 {
-                    return (decimal)summary.Data.SalesStats.AverageDailySales;
+                    return (decimal)(summary.Data?.SalesStats?.AverageDailySales ?? 0);
                 }
             }
         }

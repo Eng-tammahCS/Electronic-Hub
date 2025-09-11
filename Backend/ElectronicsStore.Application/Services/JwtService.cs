@@ -37,8 +37,8 @@ public class JwtService : IJwtService
         {
             new(ClaimTypes.NameIdentifier, user.Id.ToString()),
             new(ClaimTypes.Name, user.Username),
-            new(ClaimTypes.Email, user.Email),
-            new(ClaimTypes.Role, user.RoleName),
+            new(ClaimTypes.Email, user.Email ?? ""),
+            new(ClaimTypes.Role, user.RoleName ?? ""),
             new("FullName", user.FullName ?? user.Username),
             new("IsActive", user.IsActive.ToString()),
             new("CreatedAt", user.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"))
@@ -176,16 +176,16 @@ public class JwtService : IJwtService
         }
     }
 
-    public async Task<string?> RefreshTokenAsync(string refreshToken)
+    public Task<string?> RefreshTokenAsync(string refreshToken)
     {
         if (string.IsNullOrWhiteSpace(refreshToken))
-            return null;
+            return Task.FromResult<string?>(null);
 
         // TODO: تطبيق منطق Refresh Token مع قاعدة البيانات
         // هذا يتطلب جدول لحفظ Refresh Tokens
         // سيتم تطبيقه في مرحلة متقدمة
 
-        return null;
+        return Task.FromResult<string?>(null);
     }
 
     #region Private Methods

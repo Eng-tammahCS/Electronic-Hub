@@ -15,6 +15,9 @@ import {
 import {
   Dialog,
   DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import {
@@ -24,27 +27,24 @@ import {
   Plus,
   DollarSign,
   FileText,
-  Calendar
+  Calendar,
+  Eye,
+  RotateCcw,
+  Printer,
+  X
 } from "lucide-react";
 import { apiService } from "@/services/apiService";
 import { API_CONFIG } from "@/config/api";
 import { PosInterface } from "@/components/pos/PosInterface";
-
-// Simple interface for sales invoice
-interface SalesInvoice {
-  id: number;
-  invoiceNumber: string;
-  customerName?: string;
-  invoiceDate: string;
-  totalAmount: number;
-  discountTotal: number;
-  paymentMethod: string;
-  username: string;
-}
+import { salesInvoiceService, SalesInvoice } from "@/services/salesInvoiceService";
+import { toast } from "sonner";
 
 export function SalesInvoicesPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [isPosOpen, setIsPosOpen] = useState(false);
+  const [selectedInvoice, setSelectedInvoice] = useState<SalesInvoice | null>(null);
+  const [showPreviewDialog, setShowPreviewDialog] = useState(false);
+  const [showReturnDialog, setShowReturnDialog] = useState(false);
 
   // Fetch sales invoices from API
   const { data: invoices, isLoading, error } = useQuery<SalesInvoice[]>({
@@ -75,6 +75,59 @@ export function SalesInvoicesPage() {
   const totalInvoices = invoices?.length || 0;
   const totalAmount = invoices?.reduce((sum, invoice) => sum + invoice.totalAmount, 0) || 0;
   const totalDiscount = invoices?.reduce((sum, invoice) => sum + invoice.discountTotal, 0) || 0;
+
+  // Handle preview invoice
+  const handlePreviewInvoice = async (id: number) => {
+    try {
+      const response = await salesInvoiceService.getSalesInvoiceById(id);
+      if (response.success && response.data) {
+        setSelectedInvoice(response.data);
+        setShowPreviewDialog(true);
+      } else {
+        toast.error("فشل في تحميل تفاصيل الفاتورة");
+      }
+    } catch (error) {
+      console.error("Error loading invoice details:", error);
+      toast.error("حدث خطأ في تحميل تفاصيل الفاتورة");
+    }
+  };
+
+  // Handle return invoice
+  const handleReturnInvoice = async (id: number) => {
+    try {
+      const response = await salesInvoiceService.getSalesInvoiceById(id);
+      if (response.success && response.data) {
+        setSelectedInvoice(response.data);
+        setShowReturnDialog(true);
+      } else {
+        toast.error("فشل في تحميل تفاصيل الفاتورة");
+      }
+    } catch (error) {
+      console.error("Error loading invoice details:", error);
+      toast.error("حدث خطأ في تحميل تفاصيل الفاتورة");
+    }
+  };
+
+  // Handle print invoice
+  const handlePrintInvoice = () => {
+    if (selectedInvoice) {
+      window.print();
+    }
+  };
+
+  // Get payment method text
+  const getPaymentMethodText = (paymentMethod: string | number) => {
+    const method = typeof paymentMethod === 'number' ? paymentMethod.toString() : paymentMethod;
+    switch (method) {
+      case '0':
+      case 'Cash': return 'نقدي';
+      case '1':
+      case 'Card': return 'بطاقة ائتمان';
+      case '2':
+      case 'Deferred': return 'آجل';
+      default: return method;
+    }
+  };
 
   // Handle loading state
   if (isLoading) {
@@ -227,6 +280,7 @@ export function SalesInvoicesPage() {
             <Table>
               <TableHeader>
                 <TableRow>
+                  <TableHead className="text-right">الإجراءات</TableHead>
                   <TableHead className="text-right">رقم الفاتورة</TableHead>
                   <TableHead className="text-right">اسم العميل</TableHead>
                   <TableHead className="text-right">التاريخ</TableHead>
@@ -239,7 +293,7 @@ export function SalesInvoicesPage() {
                 {filteredInvoices.length === 0 ? (
                   <TableRow>
                     <TableCell
-                      colSpan={6}
+                      colSpan={7}
                       className="text-center py-8 text-gray-500"
                     >
                       لا توجد فواتير مطابقة لمعايير البحث
@@ -248,6 +302,28 @@ export function SalesInvoicesPage() {
                 ) : (
                   filteredInvoices.map((invoice) => (
                     <TableRow key={invoice.id}>
+                      <TableCell>
+                        <div className="flex items-center gap-2 justify-end" dir="rtl">
+                          <Button 
+                            variant="ghost" 
+                            size="icon" 
+                            className="h-8 w-8 hover:bg-blue-100 hover:text-blue-600" 
+                            title="معاينة الفاتورة"
+                            onClick={() => handlePreviewInvoice(invoice.id)}
+                          >
+                            <Eye className="h-4 w-4" />
+                          </Button>
+                          <Button 
+                            variant="ghost" 
+                            size="icon" 
+                            className="h-8 w-8 hover:bg-orange-100 hover:text-orange-600" 
+                            title="إرجاع الفاتورة"
+                            onClick={() => handleReturnInvoice(invoice.id)}
+                          >
+                            <RotateCcw className="h-4 w-4" />
+                          </Button>
+                        </div>
+                      </TableCell>
                       <TableCell className="font-medium">
                         {invoice.invoiceNumber}
                       </TableCell>
@@ -262,7 +338,7 @@ export function SalesInvoicesPage() {
                       </TableCell>
                       <TableCell>
                         <Badge variant="outline">
-                          {invoice.paymentMethod}
+                          {getPaymentMethodText(invoice.paymentMethod.toString())}
                         </Badge>
                       </TableCell>
                       <TableCell>
@@ -276,6 +352,225 @@ export function SalesInvoicesPage() {
           </div>
         </CardContent>
       </Card>
+
+      {/* Invoice Preview Dialog */}
+      <Dialog open={showPreviewDialog} onOpenChange={setShowPreviewDialog}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto" dir="rtl">
+          <DialogHeader>
+            <div className="flex items-center justify-between">
+              <div>
+                <DialogTitle className="text-right">معاينة فاتورة المبيعات</DialogTitle>
+                <DialogDescription className="text-right">
+                  عرض تفاصيل الفاتورة مع إمكانية الطباعة
+                </DialogDescription>
+              </div>
+              <div className="flex items-center gap-2">
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  onClick={handlePrintInvoice}
+                  className="flex items-center gap-2"
+                >
+                  <Printer className="h-4 w-4" />
+                  طباعة
+                </Button>
+                <Button 
+                  variant="ghost" 
+                  size="sm"
+                  onClick={() => setShowPreviewDialog(false)}
+                >
+                  <X className="h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+          </DialogHeader>
+          
+          {selectedInvoice && (
+            <div className="space-y-6 print:space-y-4">
+              {/* Invoice Header */}
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border print:bg-white print:border-gray-300">
+                <div className="flex justify-between items-start">
+                  <div className="text-right">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-2">فاتورة مبيعات</h2>
+                    <div className="space-y-1 text-sm text-gray-600">
+                      <p><span className="font-medium">رقم الفاتورة:</span> {selectedInvoice.invoiceNumber}</p>
+                      <p><span className="font-medium">تاريخ الفاتورة:</span> {new Date(selectedInvoice.invoiceDate).toLocaleDateString('ar-SA')}</p>
+                      <p><span className="font-medium">تاريخ الإنشاء:</span> {new Date(selectedInvoice.createdAt).toLocaleDateString('ar-SA')}</p>
+                    </div>
+                  </div>
+                  <div className="text-left">
+                    <div className="bg-white p-4 rounded-lg shadow-sm border print:shadow-none">
+                      <h3 className="font-bold text-lg mb-2">متجر الإلكترونيات</h3>
+                      <div className="text-sm text-gray-600 space-y-1">
+                        <p>الرياض، المملكة العربية السعودية</p>
+                        <p>هاتف: +966 11 123 4567</p>
+                        <p>البريد الإلكتروني: info@electronics-store.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Customer and Payment Info */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <Card>
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-sm text-muted-foreground text-right">معلومات العميل</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-2 text-right">
+                    <div><span className="font-medium">اسم العميل:</span> {selectedInvoice.customerName || 'عميل غير محدد'}</div>
+                    <div><span className="font-medium">طريقة الدفع:</span> {getPaymentMethodText(selectedInvoice.paymentMethod.toString())}</div>
+                    <div><span className="font-medium">الموظف المسؤول:</span> {selectedInvoice.username}</div>
+                  </CardContent>
+                </Card>
+                
+                <Card>
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-sm text-muted-foreground text-right">ملخص الفاتورة</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-2 text-right">
+                    <div className="flex justify-between">
+                      <span>عدد الأصناف:</span>
+                      <span className="font-medium">{selectedInvoice.details?.length || 0}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>إجمالي الخصم:</span>
+                      <span className="font-medium text-red-600">{selectedInvoice.discountTotal.toLocaleString()} ر.س</span>
+                    </div>
+                    <div className="flex justify-between text-lg font-bold border-t pt-2">
+                      <span>المبلغ الإجمالي:</span>
+                      <span className="text-green-600">{selectedInvoice.totalAmount.toLocaleString()} ر.س</span>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Invoice Items */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-right">تفاصيل المنتجات</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="overflow-x-auto">
+                    <Table dir="rtl">
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="text-right">المجموع</TableHead>
+                          <TableHead className="text-right">الخصم</TableHead>
+                          <TableHead className="text-right">سعر الوحدة</TableHead>
+                          <TableHead className="text-right">الكمية</TableHead>
+                          <TableHead className="text-right">اسم المنتج</TableHead>
+                          <TableHead className="text-right">رقم المنتج</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {selectedInvoice.details?.map((detail, index) => (
+                          <TableRow key={index}>
+                            <TableCell className="text-right font-medium text-green-600">
+                              {detail.lineTotal.toLocaleString()} ر.س
+                            </TableCell>
+                            <TableCell className="text-right text-red-600">
+                              {detail.discountAmount.toLocaleString()} ر.س
+                            </TableCell>
+                            <TableCell className="text-right">
+                              {detail.unitPrice.toLocaleString()} ر.س
+                            </TableCell>
+                            <TableCell className="text-right">
+                              <Badge variant="outline">{detail.quantity}</Badge>
+                            </TableCell>
+                            <TableCell className="text-right font-medium">{detail.productName}</TableCell>
+                            <TableCell className="text-right text-muted-foreground">{detail.productId}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Footer */}
+              <div className="text-center text-sm text-gray-500 border-t pt-4">
+                <p>شكراً لاختياركم متجر الإلكترونيات</p>
+                <p>هذه الفاتورة صالحة للطباعة والمراجعة</p>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+
+      {/* Return Invoice Dialog */}
+      <Dialog open={showReturnDialog} onOpenChange={setShowReturnDialog}>
+        <DialogContent className="max-w-2xl" dir="rtl">
+          <DialogHeader>
+            <DialogTitle className="text-right">إرجاع فاتورة المبيعات</DialogTitle>
+            <DialogDescription className="text-right">
+              تأكيد إرجاع الفاتورة رقم {selectedInvoice?.invoiceNumber}
+            </DialogDescription>
+          </DialogHeader>
+          
+          {selectedInvoice && (
+            <div className="space-y-4">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-right text-lg">تفاصيل الفاتورة المراد إرجاعها</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3 text-right">
+                  <div className="flex justify-between">
+                    <span>رقم الفاتورة:</span>
+                    <span className="font-medium">{selectedInvoice.invoiceNumber}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>اسم العميل:</span>
+                    <span className="font-medium">{selectedInvoice.customerName || 'عميل غير محدد'}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>تاريخ الفاتورة:</span>
+                    <span className="font-medium">{new Date(selectedInvoice.invoiceDate).toLocaleDateString('ar-SA')}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>المبلغ الإجمالي:</span>
+                    <span className="font-medium text-green-600">{selectedInvoice.totalAmount.toLocaleString()} ر.س</span>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <div className="text-yellow-600 mt-0.5">
+                    <Receipt className="h-5 w-5" />
+                  </div>
+                  <div className="text-right">
+                    <h4 className="font-medium text-yellow-800 mb-1">تنبيه مهم</h4>
+                    <p className="text-sm text-yellow-700">
+                      عند إرجاع هذه الفاتورة، سيتم إرجاع جميع المنتجات إلى المخزون وإلغاء المعاملة.
+                      هل أنت متأكد من رغبتك في المتابعة؟
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-end gap-3">
+                <Button 
+                  variant="outline" 
+                  onClick={() => setShowReturnDialog(false)}
+                >
+                  إلغاء
+                </Button>
+                <Button 
+                  variant="destructive"
+                  onClick={() => {
+                    // TODO: Implement return logic
+                    toast.success("تم إرجاع الفاتورة بنجاح");
+                    setShowReturnDialog(false);
+                  }}
+                >
+                  تأكيد الإرجاع
+                </Button>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

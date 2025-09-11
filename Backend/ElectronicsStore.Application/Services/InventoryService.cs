@@ -194,7 +194,7 @@ public class InventoryService : IInventoryService
         {
             ProductId = productId,
             MovementType = movementType,
-            Quantity = Math.Abs(quantityChange),
+            Quantity = quantityChange, // استخدام الكمية كما هي (موجبة أو سالبة)
             UnitCost = product.DefaultCostPrice,
             ReferenceTable = "stock_update",
             ReferenceId = 0,

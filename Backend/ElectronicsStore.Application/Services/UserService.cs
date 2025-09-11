@@ -215,7 +215,7 @@ public class UserService : IUserService
             u.Username.ToLower().Contains(searchTermLower) ||
             u.Email.ToLower().Contains(searchTermLower) ||
             (!string.IsNullOrEmpty(u.FullName) && u.FullName.ToLower().Contains(searchTermLower)) ||
-            u.RoleName.ToLower().Contains(searchTermLower));
+            (u.RoleName ?? "").ToLower().Contains(searchTermLower));
     }
 
     public async Task<IEnumerable<UserDto>> GetUsersByRoleAsync(int roleId)
@@ -422,7 +422,7 @@ public class UserService : IUserService
                 Permissions = permissions
             };
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             // في حالة حدوث خطأ، أرجع UserDto أساسي
             return new UserDto
@@ -480,7 +480,7 @@ public class UserService : IUserService
             .GroupBy(u => u.RoleName)
             .Select(g => new UserRoleDistributionDto
             {
-                RoleName = g.Key,
+                RoleName = g.Key ?? "",
                 UserCount = g.Count(),
                 Percentage = Math.Round((decimal)g.Count() / totalUsers * 100, 2)
             })

@@ -145,6 +145,9 @@ public class SalesInvoiceService : ISalesInvoiceService
         await UpdateInventoryAsync(dto.Details, MovementType.Sale);
 
         await _unitOfWork.SaveChangesAsync();
+        
+        // Log saved details for debugging
+        Console.WriteLine($"Saved {invoiceDetails.Count} invoice details for invoice {invoice.Id}");
 
         return await GetSalesInvoiceByIdAsync(invoice.Id) ?? throw new Exception("Failed to retrieve created invoice");
     }
@@ -246,11 +249,16 @@ public class SalesInvoiceService : ISalesInvoiceService
             var product = await _unitOfWork.Products.GetByIdAsync(detail.ProductId);
             if (product != null)
             {
+                // تحديد الكمية بناءً على نوع الحركة
+                // للبيع: كمية سالبة (تقليل المخزون)
+                // للشراء أو الإرجاع: كمية موجبة (زيادة المخزون)
+                int quantity = movementType == MovementType.Sale ? -detail.Quantity : detail.Quantity;
+
                 var inventoryLog = new InventoryLog
                 {
                     ProductId = detail.ProductId,
                     MovementType = movementType,
-                    Quantity = detail.Quantity,
+                    Quantity = quantity,
                     UnitCost = detail.UnitPrice,
                     ReferenceTable = "sales_invoices",
                     ReferenceId = 0, // Will be updated after invoice creation
@@ -319,5 +327,16 @@ public class SalesInvoiceService : ISalesInvoiceService
     {
         // استخدام userId افتراضي أو الحصول عليه من السياق
         return await CreateSalesInvoiceAsync(dto, 1); // TODO: Get actual user ID from context
+    }
+
+    public async Task<SalesInvoiceDto?> UpdateSalesInvoiceAsync(int id, UpdateSalesInvoiceDto dto, int userId)
+    {
+        var existingInvoice = await _unitOfWork.SalesInvoices.GetByIdAsync(id);
+        if (existingInvoice == null)
+            return null;
+
+        // TODO: Implement update logic
+        // This is a placeholder implementation
+        throw new NotImplementedException("Update functionality not yet implemented");
     }
 }

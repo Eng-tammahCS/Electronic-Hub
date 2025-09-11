@@ -56,15 +56,10 @@ public class BusinessOperationsFacade
         // تعديل الفاتورة بالأسعار المحسوبة
         invoiceDto.DiscountTotal = (invoiceDto.Details.Sum(d => d.Quantity * d.UnitPrice) - totalWithDiscounts);
 
-        // إنشاء الفاتورة
+        // إنشاء الفاتورة (سيقوم بتحديث المخزون تلقائياً)
         var invoice = await _salesInvoiceService.CreateSalesInvoiceAsync(invoiceDto);
 
-        // تحديث المخزون
-        foreach (var item in invoiceDto.Details)
-        {
-            await _inventoryService.UpdateStockAsync(item.ProductId, -item.Quantity);
-        }
-
+        // لا حاجة لتحديث المخزون مرة أخرى لأن SalesInvoiceService يقوم بذلك
         return invoice;
     }
 
