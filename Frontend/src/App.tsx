@@ -23,6 +23,7 @@ import { UsersPage } from "./pages/users/UsersPage";
 import { SettingsPage } from "./pages/settings/SettingsPage";
 import { AuditPage } from "./pages/audit/AuditPage";
 import { CustomersPage } from "./pages/CustomersPage";
+import PredictionsPage from "./pages/Predictions";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -182,6 +183,12 @@ function AppRoutes() {
           <CustomersPage />
         </ProtectedRoute>
       } />
+
+      <Route path="/predictions" element={
+        <ProtectedRoute requiredRole="admin">
+          <PredictionsPage />
+        </ProtectedRoute>
+      } />
       
       {/* Catch-all route */}
       <Route path="*" element={<NotFound />} />
@@ -195,7 +202,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
           <AuthProvider>
             <AppRoutes />
           </AuthProvider>

@@ -48,6 +48,15 @@ builder.Services.AddScoped<IPasswordService, PasswordService>();
 // Add User Services
 builder.Services.AddScoped<IUserService, UserService>();
 
+// Add ML Prediction Services
+builder.Services.AddHttpClient<ISalesPredictionService, SalesPredictionService>(client =>
+{
+    var mlServiceUrl = builder.Configuration["MLService:BaseUrl"] ?? "http://localhost:5000";
+    client.BaseAddress = new Uri(mlServiceUrl);
+    client.Timeout = TimeSpan.FromSeconds(30);
+});
+builder.Services.AddScoped<ISalesPredictionService, SalesPredictionService>();
+
 // Add JWT Services
 builder.Services.AddScoped<IJwtService, JwtService>();
 

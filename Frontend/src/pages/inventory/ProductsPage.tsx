@@ -60,7 +60,9 @@ import {
   Truck,
   Info,
   FileText,
-  X
+  X,
+  Save,
+  RotateCcw
 } from "lucide-react";
 import { useProducts, useCreateProduct, useDeleteProduct, useUpdateProduct } from "@/hooks/useProducts";
 import { useCategories } from "@/hooks/useCategories";
@@ -228,6 +230,22 @@ export function ProductsPage() {
       supplierId: product.supplierId
     });
     setIsEditDialogOpen(true);
+  };
+
+  // Reset edit form to original values
+  const resetEditForm = () => {
+    if (selectedProduct) {
+      setEditProduct({
+        name: selectedProduct.name,
+        barcode: selectedProduct.barcode,
+        description: selectedProduct.description,
+        defaultCostPrice: selectedProduct.defaultCostPrice,
+        defaultSellingPrice: selectedProduct.defaultSellingPrice,
+        minSellingPrice: selectedProduct.minSellingPrice,
+        categoryId: selectedProduct.categoryId,
+        supplierId: selectedProduct.supplierId
+      });
+    }
   };
 
   // Open delete confirmation dialog
@@ -689,14 +707,15 @@ export function ProductsPage() {
                                 </Badge>
                               </TableCell>
                               <TableCell className="w-[15%]">
-                                <div className="flex items-center gap-2">
+                                <div className="flex items-center gap-1">
                                   <Dialog open={isViewDialogOpen} onOpenChange={setIsViewDialogOpen}>
                                     <DialogTrigger asChild>
                                       <Button
                                         variant="ghost"
                                         size="sm"
-                                        className="hidden"
                                         onClick={() => setSelectedProduct(product)}
+                                        title="عرض التفاصيل"
+                                        className="hover:bg-blue-50 hover:text-blue-600 transition-colors"
                                       >
                                         <Eye className="h-4 w-4" />
                                       </Button>
@@ -878,7 +897,7 @@ export function ProductsPage() {
                                                 setIsViewDialogOpen(false);
                                                 openEditDialog(selectedProduct);
                                               }}
-                                              className="flex items-center gap-2"
+                                              className="flex items-center gap-2 bg-green-600 hover:bg-green-700"
                                             >
                                               <Edit className="h-4 w-4" />
                                               تعديل المنتج
@@ -893,6 +912,8 @@ export function ProductsPage() {
                                     variant="ghost" 
                                     size="sm"
                                     onClick={() => openEditDialog(product)}
+                                    title="تعديل المنتج"
+                                    className="hover:bg-green-50 hover:text-green-600 transition-colors"
                                   >
                                     <Edit className="h-4 w-4" />
                                   </Button>
@@ -902,6 +923,8 @@ export function ProductsPage() {
                                     size="sm"
                                     onClick={() => openDeleteDialog(product)}
                                     disabled={deleteProductMutation.isPending}
+                                    title="حذف المنتج"
+                                    className="hover:bg-red-50 hover:text-red-600 transition-colors disabled:opacity-50"
                                   >
                                     <Trash2 className="h-4 w-4" />
                                   </Button>
@@ -920,6 +943,164 @@ export function ProductsPage() {
         </CardContent>
       </Card>
     </motion.div>
+
+      {/* Edit Product Dialog */}
+      <Dialog open={isEditDialogOpen} onOpenChange={setIsEditDialogOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>تعديل المنتج</DialogTitle>
+            <DialogDescription>
+              تعديل بيانات المنتج المحدد
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-4">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="grid gap-2">
+                <Label htmlFor="edit-name">اسم المنتج *</Label>
+                <Input
+                  id="edit-name"
+                  value={editProduct.name || ''}
+                  onChange={(e) => setEditProduct({...editProduct, name: e.target.value})}
+                  placeholder="اسم المنتج"
+                />
+              </div>
+              <div className="grid gap-2">
+                <Label htmlFor="edit-barcode">الباركود</Label>
+                <Input
+                  id="edit-barcode"
+                  value={editProduct.barcode || ''}
+                  onChange={(e) => setEditProduct({...editProduct, barcode: e.target.value})}
+                  placeholder="رقم الباركود"
+                />
+              </div>
+            </div>
+            
+            <div className="grid gap-2">
+              <Label htmlFor="edit-description">الوصف</Label>
+              <Textarea
+                id="edit-description"
+                value={editProduct.description || ''}
+                onChange={(e) => setEditProduct({...editProduct, description: e.target.value})}
+                placeholder="وصف المنتج"
+              />
+            </div>
+
+            <div className="grid grid-cols-3 gap-4">
+              <div className="grid gap-2">
+                <Label htmlFor="edit-defaultSellingPrice">سعر البيع الافتراضي *</Label>
+                <Input
+                  id="edit-defaultSellingPrice"
+                  type="number"
+                  step="0.01"
+                  value={editProduct.defaultSellingPrice || ''}
+                  onChange={(e) => setEditProduct({...editProduct, defaultSellingPrice: Number(e.target.value)})}
+                  placeholder="0.00"
+                />
+              </div>
+              <div className="grid gap-2">
+                <Label htmlFor="edit-defaultCostPrice">سعر التكلفة</Label>
+                <Input
+                  id="edit-defaultCostPrice"
+                  type="number"
+                  step="0.01"
+                  value={editProduct.defaultCostPrice || ''}
+                  onChange={(e) => setEditProduct({...editProduct, defaultCostPrice: Number(e.target.value)})}
+                  placeholder="0.00"
+                />
+              </div>
+              <div className="grid gap-2">
+                <Label htmlFor="edit-minSellingPrice">أقل سعر بيع</Label>
+                <Input
+                  id="edit-minSellingPrice"
+                  type="number"
+                  step="0.01"
+                  value={editProduct.minSellingPrice || ''}
+                  onChange={(e) => setEditProduct({...editProduct, minSellingPrice: Number(e.target.value)})}
+                  placeholder="0.00"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div className="grid gap-2">
+                <Label htmlFor="edit-categoryId">الفئة *</Label>
+                <Select
+                  value={editProduct.categoryId?.toString() || ''}
+                  onValueChange={(value) => setEditProduct({...editProduct, categoryId: Number(value)})}
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="اختر الفئة" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {categories.map((category) => (
+                      <SelectItem key={category.id} value={category.id.toString()}>
+                        {category.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="grid gap-2">
+                <Label htmlFor="edit-supplierId">المورد</Label>
+                <Select
+                  value={editProduct.supplierId?.toString() || 'none'}
+                  onValueChange={(value) => setEditProduct({...editProduct, supplierId: value === 'none' ? undefined : Number(value)})}
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="اختر المورد (اختياري)" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="none">بدون مورد</SelectItem>
+                    {suppliers.map((supplier) => (
+                      <SelectItem key={supplier.id} value={supplier.id.toString()}>
+                        {supplier.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+          </div>
+          <DialogFooter className="flex justify-between">
+            <Button 
+              variant="outline" 
+              onClick={resetEditForm}
+              className="flex items-center gap-2"
+              title="إعادة تعيين النموذج"
+            >
+              <RotateCcw className="h-4 w-4" />
+              إعادة تعيين
+            </Button>
+            <div className="flex gap-2">
+              <Button 
+                variant="outline" 
+                onClick={() => setIsEditDialogOpen(false)}
+                className="flex items-center gap-2"
+              >
+                <X className="h-4 w-4" />
+                إلغاء
+              </Button>
+              <Button 
+                onClick={handleEditProduct}
+                disabled={updateProductMutation.isPending}
+                className="flex items-center gap-2"
+              >
+                {updateProductMutation.isPending ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    جاري التحديث...
+                  </>
+                ) : (
+                  <>
+                    <Save className="h-4 w-4" />
+                    تحديث المنتج
+                  </>
+                )}
+              </Button>
+            </div>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       {/* Delete Confirmation Dialog */}
       <AlertDialog open={isDeleteDialogOpen} onOpenChange={setIsDeleteDialogOpen}>

@@ -12,8 +12,9 @@ export interface CreateCategoryRequest {
   name: string;
 }
 
-export interface UpdateCategoryRequest extends Partial<CreateCategoryRequest> {
+export interface UpdateCategoryRequest {
   id: number;
+  name: string;
 }
 
 // Category Service Class
@@ -37,7 +38,11 @@ class CategoryService {
 
   // Update existing category
   async updateCategory(id: number, categoryData: Partial<CreateCategoryRequest>): Promise<ApiResponse<Category>> {
-    return apiService.put<Category>(`${this.baseEndpoint}/${id}`, categoryData);
+    const updateData: UpdateCategoryRequest = {
+      id: id,
+      name: categoryData.name || ''
+    };
+    return apiService.put<Category>(`${this.baseEndpoint}/${id}`, updateData);
   }
 
   // Delete category

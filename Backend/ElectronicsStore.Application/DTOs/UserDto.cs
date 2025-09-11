@@ -40,7 +40,7 @@ public class UserDto
     /// <summary>
     /// اسم الدور
     /// </summary>
-    public string RoleName { get; set; } = string.Empty;
+    public string? RoleName { get; set; } = string.Empty;
 
     /// <summary>
     /// حالة المستخدم (نشط/غير نشط)
@@ -78,7 +78,7 @@ public class CreateUserDto
     /// </summary>
     [Required(ErrorMessage = "اسم المستخدم مطلوب")]
     [StringLength(50, MinimumLength = 3, ErrorMessage = "اسم المستخدم يجب أن يكون بين 3 و 50 حرف")]
-    [RegularExpression(@"^[a-zA-Z0-9_]+$", ErrorMessage = "اسم المستخدم يجب أن يحتوي على أحرف وأرقام و _ فقط")]
+    [RegularExpression(@"^[a-zA-Z0-9_]+$", ErrorMessage = "اسم المستخدم يجب أن يحتوي على أحرف إنجليزية وأرقام و _ فقط (لا يُسمح بالأحرف العربية)")]
     public string Username { get; set; } = string.Empty;
 
     /// <summary>

@@ -51,9 +51,9 @@ export interface User {
 
 // Enums matching backend
 export enum PaymentMethod {
-  Cash = 'Cash',
-  Card = 'Card',
-  Deferred = 'Deferred'
+  Cash = 0,
+  Card = 1,
+  Deferred = 2
 }
 
 export enum MovementType {

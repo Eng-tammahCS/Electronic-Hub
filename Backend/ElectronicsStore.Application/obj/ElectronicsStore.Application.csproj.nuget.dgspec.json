@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\OneDrive\\Desktop\\v4\\v5\\project_v4\\project_v4\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj": {}
+    "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\OneDrive\\Desktop\\v4\\v5\\project_v4\\project_v4\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj": {
+    "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Desktop\\v4\\v5\\project_v4\\project_v4\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
+        "projectUniqueName": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
         "projectName": "ElectronicsStore.Application",
-        "projectPath": "C:\\Users\\HP\\OneDrive\\Desktop\\v4\\v5\\project_v4\\project_v4\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\OneDrive\\Desktop\\v4\\v5\\project_v4\\project_v4\\Backend\\ElectronicsStore.Application\\obj\\",
+        "projectPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
+        "packagesPath": "C:\\Users\\Tamma\\.nuget\\packages\\",
+        "outputPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\HP\\OneDrive\\Desktop\\v4\\v5\\project_v4\\project_v4\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
-                "projectPath": "C:\\Users\\HP\\OneDrive\\Desktop\\v4\\v5\\project_v4\\project_v4\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj"
+              "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
+                "projectPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj"
               }
             }
           }
@@ -79,17 +79,17 @@
         }
       }
     },
-    "C:\\Users\\HP\\OneDrive\\Desktop\\v4\\v5\\project_v4\\project_v4\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
+    "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Desktop\\v4\\v5\\project_v4\\project_v4\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
+        "projectUniqueName": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
         "projectName": "ElectronicsStore.Domain",
-        "projectPath": "C:\\Users\\HP\\OneDrive\\Desktop\\v4\\v5\\project_v4\\project_v4\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\OneDrive\\Desktop\\v4\\v5\\project_v4\\project_v4\\Backend\\ElectronicsStore.Domain\\obj\\",
+        "projectPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\Tamma\\.nuget\\packages\\",
+        "outputPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

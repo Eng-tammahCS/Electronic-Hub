@@ -378,10 +378,10 @@ export function PosInterface({ onClose }: PosInterfaceProps) {
 
               {/* Customer Selection */}
               <div>
-                <label className="text-sm font-medium mb-2 block">اختيار العميل:</label>
+                <label htmlFor="customer-select" className="text-sm font-medium mb-2 block">اختيار العميل:</label>
                 {console.log('Customers data state:', { customersData, customersLoading, hasData: customersData && customersData.length > 0 })}
                 <Select value={selectedCustomerId} onValueChange={setSelectedCustomerId}>
-                  <SelectTrigger>
+                  <SelectTrigger id="customer-select">
                     <SelectValue placeholder="اختر عميل..." />
                   </SelectTrigger>
                   <SelectContent>
@@ -420,8 +420,9 @@ export function PosInterface({ onClose }: PosInterfaceProps) {
               {/* Custom Customer Name (only for walk-in customers) */}
               {selectedCustomerId === "walk-in" && (
                 <div>
-                  <label className="text-sm font-medium mb-2 block">اسم العميل (اختياري):</label>
+                  <label htmlFor="custom-customer-name" className="text-sm font-medium mb-2 block">اسم العميل (اختياري):</label>
                   <Input
+                    id="custom-customer-name"
                     placeholder="أدخل اسم العميل..."
                     value={customCustomerName}
                     onChange={(e) => setCustomCustomerName(e.target.value)}
@@ -503,7 +504,7 @@ export function PosInterface({ onClose }: PosInterfaceProps) {
 
               {/* Payment Method */}
               <div className="mb-4">
-                <label className="text-sm font-medium mb-2 block">طريقة الدفع:</label>
+                <label htmlFor="payment-method" className="text-sm font-medium mb-2 block">طريقة الدفع:</label>
                 <div className="flex gap-2">
                   <Button
                     size="sm"

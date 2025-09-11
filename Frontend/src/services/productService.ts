@@ -29,8 +29,16 @@ export interface CreateProductRequest {
   description?: string;
 }
 
-export interface UpdateProductRequest extends Partial<CreateProductRequest> {
+export interface UpdateProductRequest {
   id: number;
+  name: string;
+  barcode?: string;
+  categoryId: number;
+  supplierId?: number;
+  defaultCostPrice: number;
+  defaultSellingPrice: number;
+  minSellingPrice: number;
+  description?: string;
 }
 
 export interface ProductFilters {
@@ -78,7 +86,18 @@ class ProductService {
 
   // Update existing product
   async updateProduct(id: number, productData: Partial<CreateProductRequest>): Promise<ApiResponse<Product>> {
-    return apiService.put<Product>(`${this.baseEndpoint}/${id}`, productData);
+    const updateData: UpdateProductRequest = {
+      id: id,
+      name: productData.name || '',
+      barcode: productData.barcode,
+      categoryId: productData.categoryId || 0,
+      supplierId: productData.supplierId,
+      defaultCostPrice: productData.defaultCostPrice || 0,
+      defaultSellingPrice: productData.defaultSellingPrice || 0,
+      minSellingPrice: productData.minSellingPrice || 0,
+      description: productData.description
+    };
+    return apiService.put<Product>(`${this.baseEndpoint}/${id}`, updateData);
   }
 
   // Delete product
@@ -94,6 +113,25 @@ class ProductService {
   // Get products by category
   async getProductsByCategory(categoryId: number): Promise<ApiResponse<Product[]>> {
     return apiService.get<Product[]>(`${this.baseEndpoint}/category/${categoryId}`);
+  }
+
+  // Get products by category with filters
+  async getProductsByCategoryWithFilters(categoryId: number, filters?: Omit<ProductFilters, 'categoryId'>): Promise<ApiResponse<Product[]>> {
+    const queryParams = new URLSearchParams();
+    
+    if (filters) {
+      Object.entries(filters).forEach(([key, value]) => {
+        if (value !== undefined && value !== null && value !== '') {
+          queryParams.append(key, value.toString());
+        }
+      });
+    }
+
+    const endpoint = queryParams.toString() 
+      ? `${this.baseEndpoint}/category/${categoryId}?${queryParams.toString()}`
+      : `${this.baseEndpoint}/category/${categoryId}`;
+
+    return apiService.get<Product[]>(endpoint);
   }
 
   // Get products by supplier

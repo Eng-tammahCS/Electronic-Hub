@@ -18,7 +18,8 @@ import {
   FileText,
   AlertTriangle,
   ChevronDown,
-  Store
+  Store,
+  Brain
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -140,6 +141,16 @@ const adminMenuItems: MenuItem[] = [
     items: [
       { title: "المصروفات", url: "/expenses" },
       { title: "التقارير الشاملة", url: "/reports" }
+    ]
+  },
+  {
+    title: "التقارير والتحليلات",
+    icon: BarChart3,
+    items: [
+      { title: "لوحة التحكم", url: "/dashboard" },
+      { title: "تقارير المبيعات", url: "/reports/sales" },
+      { title: "تنبؤات المبيعات", url: "/predictions" },
+      { title: "تدقيق العمليات", url: "/audit" }
     ]
   },
   {

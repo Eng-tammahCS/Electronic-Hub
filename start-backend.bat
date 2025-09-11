@@ -36,6 +36,10 @@ echo Press Ctrl+C to stop the server
 echo ========================================
 echo.
 
+echo ملاحظة: تأكد من تشغيل خدمة Python ML منفصلاً
+echo استخدم: start-ml-service.bat
+echo.
+
 dotnet run
 
 pause

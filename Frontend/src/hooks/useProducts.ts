@@ -64,15 +64,15 @@ export const useSearchProducts = (searchTerm: string) => {
   });
 };
 
-export const useProductsByCategory = (categoryId: number) => {
+export const useProductsByCategory = (categoryId: number, filters?: Omit<ProductFilters, 'categoryId'>) => {
   const { isAuthenticated } = useAuth();
   
   return useQuery({
-    queryKey: productKeys.byCategory(categoryId),
-    queryFn: () => productService.getProductsByCategory(categoryId),
+    queryKey: [...productKeys.byCategory(categoryId), filters],
+    queryFn: () => productService.getProductsByCategoryWithFilters(categoryId, filters),
     enabled: isAuthenticated && !!categoryId,
-    staleTime: 5 * 60 * 1000,
-    gcTime: 10 * 60 * 1000,
+    staleTime: 2 * 60 * 1000, // 2 minutes for better real-time updates
+    gcTime: 5 * 60 * 1000,
   });
 };
 
