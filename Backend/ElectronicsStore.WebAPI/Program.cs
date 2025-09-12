@@ -55,7 +55,6 @@ builder.Services.AddHttpClient<ISalesPredictionService, SalesPredictionService>(
     client.BaseAddress = new Uri(mlServiceUrl);
     client.Timeout = TimeSpan.FromSeconds(30);
 });
-builder.Services.AddScoped<ISalesPredictionService, SalesPredictionService>();
 
 // Add JWT Services
 builder.Services.AddScoped<IJwtService, JwtService>();

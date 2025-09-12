@@ -19,7 +19,16 @@ warnings.filterwarnings('ignore')
 from model_handler import sales_model
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5002", "https://localhost:7001", "http://localhost:5173"])  # للسماح بطلبات من مصادر مختلفة
+CORS(app, origins=[
+    "http://localhost:5002", 
+    "https://localhost:7001", 
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "http://localhost:8080",
+    "http://127.0.0.1:5002",
+    "http://127.0.0.1:7001",
+    "http://127.0.0.1:5173"
+])  # للسماح بطلبات من مصادر مختلفة
 
 # تهيئة النموذج عند بدء التطبيق
 def initialize_model():
@@ -53,6 +62,15 @@ def home():
 @app.route('/api/health', methods=['GET'])
 def health_check():
     """فحص حالة API"""
+    return jsonify({
+        "status": "healthy",
+        "message": "API يعمل بشكل طبيعي",
+        "timestamp": datetime.now().isoformat()
+    })
+
+@app.route('/health', methods=['GET'])
+def health_check_simple():
+    """فحص حالة API (endpoint مبسط)"""
     return jsonify({
         "status": "healthy",
         "message": "API يعمل بشكل طبيعي",
