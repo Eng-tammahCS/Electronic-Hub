@@ -19,4 +19,8 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  define: {
+    'import.meta.env.VITE_API_BASE_URL': JSON.stringify(process.env.VITE_API_BASE_URL || 'http://localhost:5002'),
+    'import.meta.env.VITE_ML_SERVICE_URL': JSON.stringify(process.env.VITE_ML_SERVICE_URL || 'http://localhost:5000'),
+  },
 }));

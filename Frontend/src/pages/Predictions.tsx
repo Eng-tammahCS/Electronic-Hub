@@ -60,7 +60,7 @@ const PredictionsPage: React.FC = () => {
     setIsDemoMode(false);
     
     try {
-      const response = await fetch('/api/predictions/tomorrow', {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:7001'}/api/predictions/tomorrow`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
@@ -89,7 +89,7 @@ const PredictionsPage: React.FC = () => {
       const predictionData: PredictionData = {
         predictedSales: data.predictedSales,
         confidence: data.confidence,
-        date: new Date(data.predictionDate).toLocaleDateString('ar-SA'),
+        date: new Date(data.predictionDate).toLocaleDateString('en-US'),
         model: data.modelName,
         features: {
           dayOfWeek: data.features.dayOfWeek,
@@ -103,7 +103,7 @@ const PredictionsPage: React.FC = () => {
         },
         recommendations: data.recommendations,
         metadata: data.metadata ? {
-          lastAvailableDate: new Date(data.metadata.lastAvailableDate).toLocaleDateString('ar-SA'),
+          lastAvailableDate: new Date(data.metadata.lastAvailableDate).toLocaleDateString('en-US'),
           featuresCount: data.metadata.featuresCount,
           modelType: data.metadata.modelType,
           modelAccuracy: data.metadata.modelAccuracy,
@@ -137,11 +137,11 @@ const PredictionsPage: React.FC = () => {
     const mockPrediction: PredictionData = {
       predictedSales: 15420.50,
       confidence: 0.95,
-      date: new Date().toLocaleDateString('ar-SA'),
+      date: new Date().toLocaleDateString('en-US'),
       model: 'Random Forest (Demo Mode)',
       features: {
-        dayOfWeek: new Date().toLocaleDateString('ar-SA', { weekday: 'long' }),
-        month: new Date().toLocaleDateString('ar-SA', { month: 'long' }),
+        dayOfWeek: new Date().toLocaleDateString('en-US', { weekday: 'long' }),
+        month: new Date().toLocaleDateString('en-US', { month: 'long' }),
         year: new Date().getFullYear(),
         lastWeekAvg: 12850.30,
         lastMonthAvg: 14200.75,
@@ -170,7 +170,7 @@ const PredictionsPage: React.FC = () => {
 
   const checkServiceStatus = async () => {
     try {
-      const response = await fetch('/api/predictions/status');
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:7001'}/api/predictions/status`);
       if (response.ok) {
         const data = await response.json();
         setServiceStatus(data.isAvailable);
