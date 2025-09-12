@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj": {}
+    "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj": {}
   },
   "projects": {
-    "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj": {
+    "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
+        "projectUniqueName": "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
         "projectName": "ElectronicsStore.Application",
-        "projectPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
-        "packagesPath": "C:\\Users\\Tamma\\.nuget\\packages\\",
-        "outputPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\obj\\",
+        "projectPath": "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
+        "packagesPath": "C:\\Users\\azam\\.nuget\\packages\\",
+        "outputPath": "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Tamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\azam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
-                "projectPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj"
+              "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
+                "projectPath": "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj"
               }
             }
           }
@@ -50,6 +54,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[9.0.8, )"
@@ -79,17 +87,21 @@
         }
       }
     },
-    "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
+    "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
+        "projectUniqueName": "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
         "projectName": "ElectronicsStore.Domain",
-        "projectPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
-        "packagesPath": "C:\\Users\\Tamma\\.nuget\\packages\\",
-        "outputPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\obj\\",
+        "projectPath": "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\azam\\.nuget\\packages\\",
+        "outputPath": "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Tamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\azam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,6 +132,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

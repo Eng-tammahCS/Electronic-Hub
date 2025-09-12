@@ -108,9 +108,7 @@ class ApiService {
   // Create headers for authenticated requests
   private getAuthHeaders(): HeadersInit {
     const token = this.getToken();
-    const headers: HeadersInit = {
-      'Content-Type': 'application/json',
-    };
+    const headers: HeadersInit = {};
 
     if (token) {
       headers['Authorization'] = `Bearer ${token}`;
@@ -134,6 +132,7 @@ class ApiService {
         ...options,
         headers: {
           ...this.getAuthHeaders(),
+          ...(options.body && !options.headers?.['Content-Type'] && !options.headers?.['content-type'] ? { 'Content-Type': 'application/json' } : {}),
           ...options.headers,
         },
         signal: controller.signal,
@@ -162,6 +161,9 @@ class ApiService {
       // Handle other error status codes
       if (!response.ok) {
         const errorData = await response.text();
+        console.log('API Error - Status:', response.status);
+        console.log('API Error - StatusText:', response.statusText);
+        console.log('API Error - Response:', errorData);
         return {
           success: false,
           message: `خطأ في الخادم: ${response.status} ${response.statusText}`,
@@ -171,6 +173,8 @@ class ApiService {
 
       // Parse JSON response
       const data = await response.json();
+      console.log("API Success - URL:", url);
+      console.log("API Success - Response data:", data);
       return {
         success: true,
         data,
@@ -212,7 +216,7 @@ class ApiService {
     // Try HTTPS first (more reliable in production)
     const httpsUrl = getApiUrl(endpoint);
     console.log('Trying HTTPS:', httpsUrl);
-    const httpsResult = await this.fetchWithErrorHandling<T>(httpsUrl, options, 3000);
+    const httpsResult = await this.fetchWithErrorHandling<T>(httpsUrl, options, 10000);
 
     // If HTTPS succeeds, return it
     if (httpsResult.success) {
@@ -224,7 +228,7 @@ class ApiService {
       console.warn('HTTPS failed, trying HTTP fallback');
       const httpUrl = getHttpApiUrl(endpoint);
       console.log('Trying HTTP:', httpUrl);
-      return this.fetchWithErrorHandling<T>(httpUrl, options, 3000);
+      return this.fetchWithErrorHandling<T>(httpUrl, options, 10000);
     }
 
     return httpsResult;
@@ -331,13 +335,23 @@ class ApiService {
   }
 
   async post<T>(endpoint: string, data?: any): Promise<ApiResponse<T>> {
-    return this.fetchWithFallback<T>(endpoint, {
+    console.log('POST Request - Endpoint:', endpoint);
+    console.log('POST Request - Data:', data);
+    console.log('POST Request - Headers:', this.getAuthHeaders());
+    
+    const result = await this.fetchWithFallback<T>(endpoint, {
       method: 'POST',
       body: data ? JSON.stringify(data) : undefined,
     });
+    
+    console.log('POST Response - Result:', result);
+    return result;
   }
 
   async put<T>(endpoint: string, data?: any): Promise<ApiResponse<T>> {
+    console.log('PUT Request - Endpoint:', endpoint);
+    console.log('PUT Request - Data:', data);
+    
     return this.fetchWithFallback<T>(endpoint, {
       method: 'PUT',
       body: data ? JSON.stringify(data) : undefined,
@@ -345,6 +359,8 @@ class ApiService {
   }
 
   async delete<T>(endpoint: string): Promise<ApiResponse<T>> {
+    console.log('DELETE Request - Endpoint:', endpoint);
+    
     return this.fetchWithFallback<T>(endpoint, {
       method: 'DELETE',
     });

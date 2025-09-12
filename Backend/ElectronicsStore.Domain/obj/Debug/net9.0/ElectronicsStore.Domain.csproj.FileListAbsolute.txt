@@ -77,3 +77,16 @@ E:\Elproject\project_v4.1\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\Elect
 E:\Elproject\project_v4.1\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\refint\ElectronicsStore.Domain.dll
 E:\Elproject\project_v4.1\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.pdb
 E:\Elproject\project_v4.1\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ref\ElectronicsStore.Domain.dll
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\bin\Debug\net9.0\ElectronicsStore.Domain.deps.json
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.csproj.AssemblyReference.cache
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.AssemblyInfoInputs.cache
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.AssemblyInfo.cs
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.csproj.CoreCompileInputs.cache
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.sourcelink.json
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.dll
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\refint\ElectronicsStore.Domain.dll
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.pdb
+F:\مشاريع\GithubClone\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ref\ElectronicsStore.Domain.dll

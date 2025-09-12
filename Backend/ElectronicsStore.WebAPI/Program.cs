@@ -21,7 +21,17 @@ builder.Services.AddControllers();
 
 // Add Entity Framework
 builder.Services.AddDbContext<ElectronicsStoreDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("LocalHost")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("LocalHost"), sqlOptions =>
+    {
+        sqlOptions.EnableRetryOnFailure(
+            maxRetryCount: 3,
+            maxRetryDelay: TimeSpan.FromSeconds(30),
+            errorNumbersToAdd: null);
+    })
+    .ConfigureWarnings(warnings => warnings.Ignore(
+        Microsoft.EntityFrameworkCore.Diagnostics.RelationalEventId.AmbientTransactionWarning))
+    .EnableSensitiveDataLogging()
+    .EnableDetailedErrors());
 
 // Add Repository Pattern
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -160,5 +170,12 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Add sample data
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<ElectronicsStoreDbContext>();
+    await ElectronicsStore.WebAPI.AddSampleData.AddSamplePurchaseInvoices(context);
+}
 
 app.Run();

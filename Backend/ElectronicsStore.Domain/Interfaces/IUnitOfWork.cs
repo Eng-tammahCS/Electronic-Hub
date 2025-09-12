@@ -1,4 +1,5 @@
 using ElectronicsStore.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace ElectronicsStore.Domain.Interfaces;
 
@@ -23,4 +24,5 @@ public interface IUnitOfWork : IDisposable
     Task BeginTransactionAsync();
     Task CommitTransactionAsync();
     Task RollbackTransactionAsync();
+    DbContext GetDbContext();
 }

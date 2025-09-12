@@ -142,6 +142,7 @@ function AppRoutes() {
         </ProtectedRoute>
       } />
 
+
       <Route path="/suppliers" element={
         <ProtectedRoute>
           <SuppliersPage />

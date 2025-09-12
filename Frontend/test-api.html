@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test API</title>
+</head>
+<body>
+    <h1>Test Purchase Invoice API</h1>
+    <button onclick="testAPI()">Test API</button>
+    <div id="result"></div>
+    
+    <script>
+        async function testAPI() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Testing...';
+            
+            const testData = {
+                invoiceNumber: `PI-TEST-${Date.now()}`,
+                supplierId: 1,
+                invoiceDate: new Date().toISOString(),
+                details: [
+                    {
+                        productId: 1,
+                        quantity: 1,
+                        unitCost: 100.0
+                    }
+                ]
+            };
+            
+            console.log('Test data:', testData);
+            
+            try {
+                const response = await fetch('http://localhost:5002/api/PurchaseInvoices', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + (localStorage.getItem('token') || '')
+                    },
+                    body: JSON.stringify(testData)
+                });
+                
+                console.log('Response status:', response.status);
+                console.log('Response headers:', response.headers);
+                
+                const responseText = await response.text();
+                console.log('Response text:', responseText);
+                
+                if (response.ok) {
+                    resultDiv.innerHTML = `Success! Status: ${response.status}<br>Response: ${responseText}`;
+                } else {
+                    resultDiv.innerHTML = `Error! Status: ${response.status}<br>Response: ${responseText}`;
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                resultDiv.innerHTML = `Error: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>

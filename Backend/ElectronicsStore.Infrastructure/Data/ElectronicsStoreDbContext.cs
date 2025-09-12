@@ -48,6 +48,19 @@ public class ElectronicsStoreDbContext : DbContext
         modelBuilder.Entity<PurchaseReturn>().ToTable("purchase_returns");
         modelBuilder.Entity<Expense>().ToTable("expenses");
 
+        // Configure for database triggers compatibility
+        modelBuilder.Entity<PurchaseInvoice>()
+            .Property(e => e.Id)
+            .ValueGeneratedOnAdd()
+            .UseIdentityColumn()
+            .HasAnnotation("SqlServer:ValueGenerationStrategy", "IdentityColumn");
+
+        modelBuilder.Entity<PurchaseInvoiceDetail>()
+            .Property(e => e.Id)
+            .ValueGeneratedOnAdd()
+            .UseIdentityColumn()
+            .HasAnnotation("SqlServer:ValueGenerationStrategy", "IdentityColumn");
+
         // Configure primary keys and column names
         ConfigureEntities(modelBuilder);
         
@@ -140,7 +153,12 @@ public class ElectronicsStoreDbContext : DbContext
             entity.Property(e => e.InvoiceDate).HasColumnName("invoice_date").HasDefaultValueSql("GETDATE()");
             entity.Property(e => e.UserId).HasColumnName("user_id");
             entity.Property(e => e.TotalAmount).HasColumnName("total_amount").HasColumnType("decimal(14,2)");
-            entity.Property(e => e.CreatedAt).HasColumnName("created_at").HasDefaultValueSql("GETDATE()");
+            entity.Ignore(e => e.CreatedAt); // Ignore CreatedAt since it doesn't exist in DB
+            
+            // Configure for database triggers compatibility
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .UseIdentityColumn();
         });
 
         // PurchaseInvoiceDetail
@@ -151,8 +169,13 @@ public class ElectronicsStoreDbContext : DbContext
             entity.Property(e => e.ProductId).HasColumnName("product_id");
             entity.Property(e => e.Quantity).HasColumnName("quantity");
             entity.Property(e => e.UnitCost).HasColumnName("unit_cost").HasColumnType("decimal(10,2)");
-            entity.Property(e => e.CreatedAt).HasColumnName("created_at").HasDefaultValueSql("GETDATE()");
+            entity.Ignore(e => e.CreatedAt); // Ignore CreatedAt since it doesn't exist in DB
             entity.Ignore(e => e.LineTotal); // Computed column
+            
+            // Configure for database triggers compatibility
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .UseIdentityColumn();
         });
 
         // SalesInvoice

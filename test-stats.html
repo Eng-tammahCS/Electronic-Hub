@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Purchase Stats</title>
+</head>
+<body>
+    <h1>Test Purchase Invoice Stats</h1>
+    <div id="stats"></div>
+    
+    <script>
+        async function testStats() {
+            try {
+                const response = await fetch('http://localhost:5000/api/purchase-invoices/stats');
+                const data = await response.json();
+                
+                document.getElementById('stats').innerHTML = `
+                    <h2>الإحصائيات:</h2>
+                    <p><strong>إجمالي الفواتير:</strong> ${data.totalInvoices || data.TotalInvoices || 0}</p>
+                    <p><strong>الفواتير المكتملة:</strong> ${data.completedInvoices || data.CompletedInvoices || 0}</p>
+                    <p><strong>قيد المعالجة:</strong> ${data.pendingInvoices || data.PendingInvoices || 0}</p>
+                    <p><strong>إجمالي المشتريات:</strong> ${(data.totalAmount || data.TotalAmount || 0).toLocaleString('ar-SA')} ر.س</p>
+                    <pre>${JSON.stringify(data, null, 2)}</pre>
+                `;
+            } catch (error) {
+                document.getElementById('stats').innerHTML = `<p>خطأ: ${error.message}</p>`;
+            }
+        }
+        
+        testStats();
+    </script>
+</body>
+</html>

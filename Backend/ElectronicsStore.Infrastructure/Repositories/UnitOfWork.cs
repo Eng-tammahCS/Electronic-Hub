@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.EntityFrameworkCore;
 using ElectronicsStore.Domain.Entities;
 using ElectronicsStore.Domain.Interfaces;
 using ElectronicsStore.Infrastructure.Data;
@@ -73,6 +74,11 @@ public class UnitOfWork : IUnitOfWork
             await _transaction.DisposeAsync();
             _transaction = null;
         }
+    }
+
+    public DbContext GetDbContext()
+    {
+        return _context;
     }
 
     public void Dispose()
