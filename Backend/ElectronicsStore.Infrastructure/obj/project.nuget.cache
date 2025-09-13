@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nb84oRBibzQ=",
+  "dgSpecHash": "zuDp6q8yRvM=",
   "success": true,
-  "projectFilePath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Infrastructure\\ElectronicsStore.Infrastructure.csproj",
+  "projectFilePath": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Infrastructure\\ElectronicsStore.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tamma\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Tamma\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -32,7 +32,8 @@ public class SalesInvoiceDetailDto
     public int Quantity { get; set; }
     public decimal UnitPrice { get; set; }
     public decimal DiscountAmount { get; set; }
-    public decimal LineTotal { get; set; }
+    // LineTotal will be calculated on the fly: (UnitPrice * Quantity) - DiscountAmount
+    public decimal LineTotal => (UnitPrice * Quantity) - DiscountAmount;
 }
 
 public class CreateSalesInvoiceDto

@@ -4443,11 +4443,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Infrastructure\\ElectronicsStore.Infrastructure.csproj",
+      "projectUniqueName": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Infrastructure\\ElectronicsStore.Infrastructure.csproj",
       "projectName": "ElectronicsStore.Infrastructure",
-      "projectPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Infrastructure\\ElectronicsStore.Infrastructure.csproj",
+      "projectPath": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Infrastructure\\ElectronicsStore.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Tamma\\.nuget\\packages\\",
-      "outputPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Infrastructure\\obj\\",
+      "outputPath": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4464,11 +4464,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj": {
-              "projectPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj"
+            "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj": {
+              "projectPath": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj"
             },
-            "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
-              "projectPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj"
+            "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
+              "projectPath": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj"
             }
           }
         }

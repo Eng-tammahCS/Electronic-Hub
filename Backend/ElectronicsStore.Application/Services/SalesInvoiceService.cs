@@ -88,68 +88,85 @@ public class SalesInvoiceService : ISalesInvoiceService
 
     public async Task<SalesInvoiceDto> CreateSalesInvoiceAsync(CreateSalesInvoiceDto dto, int userId)
     {
-        // Validate products and check minimum prices
-        var validationResult = await ValidateInvoiceDetailsAsync(dto.Details, userId);
-        if (!validationResult.IsValid)
-        {
-            throw new ArgumentException(validationResult.ErrorMessage);
-        }
-
-        // Create invoice
-        var invoice = new SalesInvoice
-        {
-            InvoiceNumber = dto.InvoiceNumber,
-            CustomerName = dto.CustomerName,
-            InvoiceDate = dto.InvoiceDate,
-            DiscountTotal = dto.DiscountTotal,
-            PaymentMethod = dto.PaymentMethod,
-            UserId = userId,
-            OverrideByUserId = validationResult.RequiresOverride ? userId : null,
-            OverrideDate = validationResult.RequiresOverride ? DateTime.Now : null,
-            CreatedAt = DateTime.Now
-        };
-
-        // Calculate total amount
-        decimal totalAmount = 0;
-        var invoiceDetails = new List<SalesInvoiceDetail>();
-
-        foreach (var detailDto in dto.Details)
-        {
-            var lineTotal = (detailDto.UnitPrice * detailDto.Quantity) - detailDto.DiscountAmount;
-            totalAmount += lineTotal;
-
-            invoiceDetails.Add(new SalesInvoiceDetail
-            {
-                ProductId = detailDto.ProductId,
-                Quantity = detailDto.Quantity,
-                UnitPrice = detailDto.UnitPrice,
-                DiscountAmount = detailDto.DiscountAmount,
-                LineTotal = lineTotal
-            });
-        }
-
-        invoice.TotalAmount = totalAmount - dto.DiscountTotal;
-
-        // Save invoice
-        await _unitOfWork.SalesInvoices.AddAsync(invoice);
-        await _unitOfWork.SaveChangesAsync();
-
-        // Save details
-        foreach (var detail in invoiceDetails)
-        {
-            detail.SalesInvoiceId = invoice.Id;
-            await _unitOfWork.SalesInvoiceDetails.AddAsync(detail);
-        }
-
-        // Update inventory (reduce quantities)
-        await UpdateInventoryAsync(dto.Details, MovementType.Sale);
-
-        await _unitOfWork.SaveChangesAsync();
+        await _unitOfWork.BeginTransactionAsync();
         
-        // Log saved details for debugging
-        Console.WriteLine($"Saved {invoiceDetails.Count} invoice details for invoice {invoice.Id}");
+        try
+        {
+            // Validate products and check minimum prices
+            var validationResult = await ValidateInvoiceDetailsAsync(dto.Details, userId);
+            if (!validationResult.IsValid)
+            {
+                throw new ArgumentException(validationResult.ErrorMessage);
+            }
 
-        return await GetSalesInvoiceByIdAsync(invoice.Id) ?? throw new Exception("Failed to retrieve created invoice");
+            // Create invoice
+            var invoice = new SalesInvoice
+            {
+                InvoiceNumber = dto.InvoiceNumber,
+                CustomerName = dto.CustomerName,
+                InvoiceDate = dto.InvoiceDate,
+                DiscountTotal = dto.DiscountTotal,
+                PaymentMethod = dto.PaymentMethod,
+                UserId = userId,
+                OverrideByUserId = validationResult.RequiresOverride ? userId : null,
+                OverrideDate = validationResult.RequiresOverride ? DateTime.Now : null,
+                CreatedAt = DateTime.Now
+            };
+
+            // Calculate total amount
+            decimal totalAmount = 0;
+            var invoiceDetails = new List<SalesInvoiceDetail>();
+
+            foreach (var detailDto in dto.Details)
+            {
+                var lineTotal = (detailDto.UnitPrice * detailDto.Quantity) - detailDto.DiscountAmount;
+                totalAmount += lineTotal;
+
+                invoiceDetails.Add(new SalesInvoiceDetail
+                {
+                    ProductId = detailDto.ProductId,
+                    Quantity = detailDto.Quantity,
+                    UnitPrice = detailDto.UnitPrice,
+                    DiscountAmount = detailDto.DiscountAmount,
+                    // إزالة LineTotal - سيتم حسابه تلقائياً في قاعدة البيانات
+                });
+            }
+
+            invoice.TotalAmount = totalAmount - dto.DiscountTotal;
+
+            // Save invoice
+            await _unitOfWork.SalesInvoices.AddAsync(invoice);
+            await _unitOfWork.SaveChangesAsync();
+
+            // Save details
+            foreach (var detail in invoiceDetails)
+            {
+                detail.SalesInvoiceId = invoice.Id;
+                await _unitOfWork.SalesInvoiceDetails.AddAsync(detail);
+                Console.WriteLine($"Added detail: ProductId={detail.ProductId}, Quantity={detail.Quantity}, UnitPrice={detail.UnitPrice}");
+            }
+
+            // Update inventory (reduce quantities)
+            await UpdateInventoryAsync(dto.Details, MovementType.Sale);
+
+            await _unitOfWork.SaveChangesAsync();
+            await _unitOfWork.CommitTransactionAsync();
+            
+            // Log saved details for debugging
+            Console.WriteLine($"Saved {invoiceDetails.Count} invoice details for invoice {invoice.Id}");
+            
+            // Verify details were saved
+            var savedDetails = await _unitOfWork.SalesInvoiceDetails.FindAsync(d => d.SalesInvoiceId == invoice.Id);
+            Console.WriteLine($"Verified: Found {savedDetails.Count()} details in database for invoice {invoice.Id}");
+
+            return await GetSalesInvoiceByIdAsync(invoice.Id) ?? throw new Exception("Failed to retrieve created invoice");
+        }
+        catch (Exception ex)
+        {
+            await _unitOfWork.RollbackTransactionAsync();
+            Console.WriteLine($"Error creating sales invoice: {ex.Message}");
+            throw;
+        }
     }
 
     public async Task DeleteSalesInvoiceAsync(int id)
@@ -185,10 +202,12 @@ public class SalesInvoiceService : ISalesInvoiceService
     private async Task<List<SalesInvoiceDetailDto>> GetInvoiceDetailsAsync(IEnumerable<SalesInvoiceDetail> details)
     {
         var result = new List<SalesInvoiceDetailDto>();
+        Console.WriteLine($"GetInvoiceDetailsAsync: Processing {details.Count()} details");
 
         foreach (var detail in details)
         {
             var product = await _unitOfWork.Products.GetByIdAsync(detail.ProductId);
+            Console.WriteLine($"Processing detail: Id={detail.Id}, ProductId={detail.ProductId}, ProductName={product?.Name ?? "Unknown"}, Quantity={detail.Quantity}");
             result.Add(new SalesInvoiceDetailDto
             {
                 Id = detail.Id,
@@ -196,11 +215,12 @@ public class SalesInvoiceService : ISalesInvoiceService
                 ProductName = product?.Name ?? "Unknown Product",
                 Quantity = detail.Quantity,
                 UnitPrice = detail.UnitPrice,
-                DiscountAmount = detail.DiscountAmount,
-                LineTotal = detail.LineTotal
+                DiscountAmount = detail.DiscountAmount
+                // LineTotal will be calculated automatically by the DTO property
             });
         }
 
+        Console.WriteLine($"GetInvoiceDetailsAsync: Returning {result.Count} details");
         return result;
     }
 
@@ -214,7 +234,7 @@ public class SalesInvoiceService : ISalesInvoiceService
             var product = await _unitOfWork.Products.GetByIdAsync(detail.ProductId);
             if (product == null)
             {
-                errors.Add($"Product with ID {detail.ProductId} not found");
+                errors.Add($"المنتج برقم {detail.ProductId} غير موجود");
                 continue;
             }
 
@@ -222,6 +242,7 @@ public class SalesInvoiceService : ISalesInvoiceService
             if (detail.UnitPrice < product.MinSellingPrice)
             {
                 requiresOverride = true;
+                Console.WriteLine($"Warning: Price {detail.UnitPrice} for product {product.Name} is below minimum {product.MinSellingPrice}. Override required.");
             }
 
             // Check inventory availability
@@ -230,7 +251,23 @@ public class SalesInvoiceService : ISalesInvoiceService
             
             if (currentStock < detail.Quantity)
             {
-                errors.Add($"Insufficient stock for product {product.Name}. Available: {currentStock}, Requested: {detail.Quantity}");
+                errors.Add($"المخزون غير كافي للمنتج '{product.Name}'. المتوفر: {currentStock}, المطلوب: {detail.Quantity}");
+            }
+
+            // Additional validations
+            if (detail.Quantity <= 0)
+            {
+                errors.Add($"الكمية يجب أن تكون أكبر من صفر للمنتج '{product.Name}'");
+            }
+
+            if (detail.UnitPrice < 0)
+            {
+                errors.Add($"سعر الوحدة يجب أن يكون أكبر من أو يساوي صفر للمنتج '{product.Name}'");
+            }
+
+            if (detail.DiscountAmount < 0)
+            {
+                errors.Add($"مبلغ الخصم يجب أن يكون أكبر من أو يساوي صفر للمنتج '{product.Name}'");
             }
         }
 
@@ -238,7 +275,7 @@ public class SalesInvoiceService : ISalesInvoiceService
         {
             IsValid = errors.Count == 0,
             RequiresOverride = requiresOverride,
-            ErrorMessage = string.Join("; ", errors)
+            ErrorMessage = errors.Count > 0 ? string.Join("; ", errors) : string.Empty
         };
     }
 
@@ -250,8 +287,6 @@ public class SalesInvoiceService : ISalesInvoiceService
             if (product != null)
             {
                 // تحديد الكمية بناءً على نوع الحركة
-                // للبيع: كمية سالبة (تقليل المخزون)
-                // للشراء أو الإرجاع: كمية موجبة (زيادة المخزون)
                 int quantity = movementType == MovementType.Sale ? -detail.Quantity : detail.Quantity;
 
                 var inventoryLog = new InventoryLog
@@ -262,11 +297,12 @@ public class SalesInvoiceService : ISalesInvoiceService
                     UnitCost = detail.UnitPrice,
                     ReferenceTable = "sales_invoices",
                     ReferenceId = 0, // Will be updated after invoice creation
-                    Note = $"Sales invoice - {movementType}",
+                    Note = $"فاتورة مبيعات - {movementType}",
                     UserId = 1 // TODO: Get actual user ID
                 };
 
                 await _unitOfWork.InventoryLogs.AddAsync(inventoryLog);
+                Console.WriteLine($"Added inventory log: ProductId={detail.ProductId}, Quantity={quantity}, MovementType={movementType}");
             }
         }
     }
