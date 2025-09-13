@@ -171,6 +171,13 @@ class ApiService {
 
       // Parse JSON response
       const data = await response.json();
+      
+      // Check if the response already has the expected format
+      if (data && typeof data === 'object' && 'success' in data) {
+        return data;
+      }
+      
+      // If not, wrap it in the expected format
       return {
         success: true,
         data,

@@ -28,11 +28,11 @@ public class SalesInvoicesController : ControllerBase
         try
         {
             var invoices = await _salesInvoiceService.GetAllSalesInvoicesAsync();
-            return Ok(invoices);
+            return Ok(new { success = true, data = invoices });
         }
         catch (Exception ex)
         {
-            return StatusCode(500, new { message = "خطأ في تحميل فواتير البيع", error = ex.Message });
+            return StatusCode(500, new { success = false, message = "خطأ في تحميل فواتير البيع", error = ex.Message });
         }
     }
 
@@ -43,13 +43,13 @@ public class SalesInvoicesController : ControllerBase
         {
             var invoice = await _salesInvoiceService.GetSalesInvoiceByIdAsync(id);
             if (invoice == null)
-                return NotFound(new { message = "فاتورة البيع غير موجودة" });
+                return NotFound(new { success = false, message = "فاتورة البيع غير موجودة" });
 
-            return Ok(invoice);
+            return Ok(new { success = true, data = invoice });
         }
         catch (Exception ex)
         {
-            return StatusCode(500, new { message = "خطأ في تحميل فاتورة البيع", error = ex.Message });
+            return StatusCode(500, new { success = false, message = "خطأ في تحميل فاتورة البيع", error = ex.Message });
         }
     }
 
@@ -238,13 +238,13 @@ public class SalesInvoicesController : ControllerBase
         {
             var invoice = await _salesInvoiceService.GetSalesInvoiceByIdAsync(id);
             if (invoice == null)
-                return NotFound(new { message = "فاتورة البيع غير موجودة" });
+                return NotFound(new { success = false, message = "فاتورة البيع غير موجودة" });
 
-            return Ok(invoice);
+            return Ok(new { success = true, data = invoice });
         }
         catch (Exception ex)
         {
-            return StatusCode(500, new { message = "خطأ في تحميل تفاصيل فاتورة البيع", error = ex.Message });
+            return StatusCode(500, new { success = false, message = "خطأ في تحميل تفاصيل فاتورة البيع", error = ex.Message });
         }
     }
 

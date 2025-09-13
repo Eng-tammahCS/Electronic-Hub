@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
+      "projectUniqueName": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
       "projectName": "ElectronicsStore.Domain",
-      "projectPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
+      "projectPath": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj",
       "packagesPath": "C:\\Users\\Tamma\\.nuget\\packages\\",
-      "outputPath": "E:\\Elproject\\project_v4.1\\Backend\\ElectronicsStore.Domain\\obj\\",
+      "outputPath": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tamma\\AppData\\Roaming\\NuGet\\NuGet.Config",

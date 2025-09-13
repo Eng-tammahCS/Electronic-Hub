@@ -28,7 +28,7 @@ public class SalesInvoiceDetail : BaseEntity
     public int Quantity { get; set; }
     public decimal UnitPrice { get; set; }
     public decimal DiscountAmount { get; set; }
-    public decimal LineTotal { get; set; }
+    // LineTotal is computed in database - removed from entity model
     
     // Navigation Properties
     public virtual SalesInvoice SalesInvoice { get; set; } = null!;

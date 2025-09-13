@@ -77,3 +77,15 @@ E:\Elproject\project_v4.1\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\Elect
 E:\Elproject\project_v4.1\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\refint\ElectronicsStore.Domain.dll
 E:\Elproject\project_v4.1\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.pdb
 E:\Elproject\project_v4.1\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ref\ElectronicsStore.Domain.dll
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\bin\Debug\net9.0\ElectronicsStore.Domain.deps.json
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\bin\Debug\net9.0\ElectronicsStore.Domain.dll
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\bin\Debug\net9.0\ElectronicsStore.Domain.pdb
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.AssemblyInfoInputs.cache
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.AssemblyInfo.cs
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.csproj.CoreCompileInputs.cache
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.sourcelink.json
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.dll
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\refint\ElectronicsStore.Domain.dll
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ElectronicsStore.Domain.pdb
+E:\Elproject\project_v4.2\Electronic-Hub\Backend\ElectronicsStore.Domain\obj\Debug\net9.0\ref\ElectronicsStore.Domain.dll

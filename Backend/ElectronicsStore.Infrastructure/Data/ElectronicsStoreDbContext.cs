@@ -179,7 +179,7 @@ public class ElectronicsStoreDbContext : DbContext
             entity.Property(e => e.Quantity).HasColumnName("quantity");
             entity.Property(e => e.UnitPrice).HasColumnName("unit_price").HasColumnType("decimal(10,2)");
             entity.Property(e => e.DiscountAmount).HasColumnName("discount_amount").HasColumnType("decimal(10,2)");
-            entity.Property(e => e.LineTotal).HasColumnName("line_total").HasColumnType("decimal(12,2)");
+            // LineTotal is computed column in database - no need to map it in Entity Framework
             entity.Ignore(e => e.CreatedAt); // Not in DB schema
         });
 
