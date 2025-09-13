@@ -137,6 +137,41 @@ public class ProductService : IProductService
         var product = await _unitOfWork.Products.GetByIdAsync(id);
         if (product == null) return false;
 
+        // التحقق من وجود مراجع للمنتج في فواتير المبيعات
+        var salesInvoiceDetails = await _unitOfWork.SalesInvoiceDetails.FindAsync(d => d.ProductId == id);
+        if (salesInvoiceDetails.Any())
+        {
+            throw new InvalidOperationException($"لا يمكن حذف المنتج '{product.Name}' لأنه مستخدم في {salesInvoiceDetails.Count()} فاتورة مبيعات. يجب حذف الفواتير أولاً أو إزالة المنتج منها.");
+        }
+
+        // التحقق من وجود مراجع للمنتج في فواتير الشراء
+        var purchaseInvoiceDetails = await _unitOfWork.PurchaseInvoiceDetails.FindAsync(d => d.ProductId == id);
+        if (purchaseInvoiceDetails.Any())
+        {
+            throw new InvalidOperationException($"لا يمكن حذف المنتج '{product.Name}' لأنه مستخدم في {purchaseInvoiceDetails.Count()} فاتورة شراء. يجب حذف الفواتير أولاً أو إزالة المنتج منها.");
+        }
+
+        // التحقق من وجود مراجع للمنتج في سجل المخزون
+        var inventoryLogs = await _unitOfWork.InventoryLogs.FindAsync(l => l.ProductId == id);
+        if (inventoryLogs.Any())
+        {
+            throw new InvalidOperationException($"لا يمكن حذف المنتج '{product.Name}' لأنه موجود في {inventoryLogs.Count()} حركة مخزون. يجب حذف حركات المخزون أولاً.");
+        }
+
+        // التحقق من وجود مراجع للمنتج في مرتجعات المبيعات
+        var salesReturns = await _unitOfWork.SalesReturns.FindAsync(r => r.ProductId == id);
+        if (salesReturns.Any())
+        {
+            throw new InvalidOperationException($"لا يمكن حذف المنتج '{product.Name}' لأنه موجود في {salesReturns.Count()} مرتجع مبيعات. يجب حذف المرتجعات أولاً.");
+        }
+
+        // التحقق من وجود مراجع للمنتج في مرتجعات الشراء
+        var purchaseReturns = await _unitOfWork.PurchaseReturns.FindAsync(r => r.ProductId == id);
+        if (purchaseReturns.Any())
+        {
+            throw new InvalidOperationException($"لا يمكن حذف المنتج '{product.Name}' لأنه موجود في {purchaseReturns.Count()} مرتجع شراء. يجب حذف المرتجعات أولاً.");
+        }
+
         await _unitOfWork.Products.DeleteAsync(product);
         await _unitOfWork.SaveChangesAsync();
         return true;

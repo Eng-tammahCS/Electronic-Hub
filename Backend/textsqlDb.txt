@@ -85,6 +85,7 @@ CREATE TABLE purchase_invoices (
     invoice_date   DATETIME DEFAULT GETDATE(),
     user_id        INT NOT NULL,
     total_amount   DECIMAL(14,2) NOT NULL,
+    created_at   DATETIME DEFAULT GETDATE(),
     FOREIGN KEY (supplier_id) REFERENCES suppliers(id),
     FOREIGN KEY (user_id)       REFERENCES users(id)
 );

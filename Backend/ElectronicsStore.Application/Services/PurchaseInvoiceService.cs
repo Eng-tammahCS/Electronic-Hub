@@ -20,16 +20,62 @@ public class PurchaseInvoiceService : IPurchaseInvoiceService
         var invoices = await _unitOfWork.PurchaseInvoices.GetAllAsync();
         var invoiceDtos = new List<PurchaseInvoiceDto>();
 
+        if (!invoices.Any())
+        {
+            return invoiceDtos;
+        }
+
+        // جلب جميع الموردين مرة واحدة
+        var supplierIds = invoices.Select(i => i.SupplierId).Distinct().ToList();
+        var suppliers = new Dictionary<int, Supplier>();
+        foreach (var supplierId in supplierIds)
+        {
+            var supplier = await _unitOfWork.Suppliers.GetByIdAsync(supplierId);
+            if (supplier != null)
+            {
+                suppliers[supplierId] = supplier;
+            }
+        }
+
+        // جلب جميع المستخدمين مرة واحدة
+        var userIds = invoices.Select(i => i.UserId).Distinct().ToList();
+        var users = new Dictionary<int, User>();
+        foreach (var userId in userIds)
+        {
+            var user = await _unitOfWork.Users.GetByIdAsync(userId);
+            if (user != null)
+            {
+                users[userId] = user;
+            }
+        }
+
+        // جلب جميع التفاصيل مرة واحدة
+        var invoiceIds = invoices.Select(i => i.Id).ToList();
+        var allDetails = await _unitOfWork.PurchaseInvoiceDetails.FindAsync(d => invoiceIds.Contains(d.PurchaseInvoiceId));
+
+        // جلب جميع المنتجات مرة واحدة
+        var productIds = allDetails.Select(d => d.ProductId).Distinct().ToList();
+        var products = new Dictionary<int, Product>();
+        foreach (var productId in productIds)
+        {
+            var product = await _unitOfWork.Products.GetByIdAsync(productId);
+            if (product != null)
+            {
+                products[productId] = product;
+            }
+        }
+
+        // تجميع البيانات
         foreach (var invoice in invoices)
         {
-            var supplier = await _unitOfWork.Suppliers.GetByIdAsync(invoice.SupplierId);
-            var user = await _unitOfWork.Users.GetByIdAsync(invoice.UserId);
-            var details = await _unitOfWork.PurchaseInvoiceDetails.FindAsync(d => d.PurchaseInvoiceId == invoice.Id);
+            var supplier = suppliers.GetValueOrDefault(invoice.SupplierId);
+            var user = users.GetValueOrDefault(invoice.UserId);
+            var details = allDetails.Where(d => d.PurchaseInvoiceId == invoice.Id).ToList();
 
             var detailDtos = new List<PurchaseInvoiceDetailDto>();
             foreach (var detail in details)
             {
-                var product = await _unitOfWork.Products.GetByIdAsync(detail.ProductId);
+                var product = products.GetValueOrDefault(detail.ProductId);
                 detailDtos.Add(new PurchaseInvoiceDetailDto
                 {
                     Id = detail.Id,
@@ -37,7 +83,7 @@ public class PurchaseInvoiceService : IPurchaseInvoiceService
                     ProductName = product?.Name ?? "",
                     Quantity = detail.Quantity,
                     UnitCost = detail.UnitCost,
-                    LineTotal = detail.LineTotal
+                    LineTotal = detail.Quantity * detail.UnitCost
                 });
             }
 
@@ -79,7 +125,7 @@ public class PurchaseInvoiceService : IPurchaseInvoiceService
                 ProductName = product?.Name ?? "",
                 Quantity = detail.Quantity,
                 UnitCost = detail.UnitCost,
-                LineTotal = detail.LineTotal
+                LineTotal = detail.Quantity * detail.UnitCost
             });
         }
 
@@ -229,5 +275,46 @@ public class PurchaseInvoiceService : IPurchaseInvoiceService
         }
 
         return invoiceDtos;
+    }
+
+    public async Task<PurchaseInvoiceDto> UpdatePurchaseInvoiceAsync(UpdatePurchaseInvoiceDto updatePurchaseInvoiceDto)
+    {
+        var invoice = await _unitOfWork.PurchaseInvoices.GetByIdAsync(updatePurchaseInvoiceDto.Id);
+        if (invoice == null)
+            throw new ArgumentException("فاتورة الشراء غير موجودة");
+
+        // Update basic invoice information
+        invoice.InvoiceNumber = updatePurchaseInvoiceDto.InvoiceNumber;
+        invoice.SupplierId = updatePurchaseInvoiceDto.SupplierId;
+        invoice.InvoiceDate = updatePurchaseInvoiceDto.InvoiceDate;
+        invoice.TotalAmount = updatePurchaseInvoiceDto.TotalAmount;
+
+        // Update invoice details
+        var existingDetails = await _unitOfWork.PurchaseInvoiceDetails.GetAllAsync();
+        var currentDetails = existingDetails.Where(d => d.PurchaseInvoiceId == invoice.Id).ToList();
+
+        // Remove existing details
+        foreach (var detail in currentDetails)
+        {
+            await _unitOfWork.PurchaseInvoiceDetails.DeleteAsync(detail);
+        }
+
+        // Add new details
+        foreach (var detailDto in updatePurchaseInvoiceDto.Details)
+        {
+            var detail = new PurchaseInvoiceDetail
+            {
+                PurchaseInvoiceId = invoice.Id,
+                ProductId = detailDto.ProductId,
+                Quantity = detailDto.Quantity,
+                UnitCost = detailDto.UnitCost
+            };
+            await _unitOfWork.PurchaseInvoiceDetails.AddAsync(detail);
+        }
+
+        await _unitOfWork.PurchaseInvoices.UpdateAsync(invoice);
+        await _unitOfWork.SaveChangesAsync();
+
+        return await GetPurchaseInvoiceByIdAsync(invoice.Id);
     }
 }

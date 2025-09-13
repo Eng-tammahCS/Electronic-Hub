@@ -43,12 +43,26 @@ class SupplierService {
 
   // Update existing supplier
   async updateSupplier(id: number, supplierData: Partial<CreateSupplierRequest>): Promise<ApiResponse<Supplier>> {
-    return apiService.put<Supplier>(`${this.baseEndpoint}/${id}`, supplierData);
+    const updateData = {
+      id: id,
+      ...supplierData
+    };
+    return apiService.put<Supplier>(`${this.baseEndpoint}/${id}`, updateData);
   }
 
   // Delete supplier
   async deleteSupplier(id: number): Promise<ApiResponse<void>> {
     return apiService.delete<void>(`${this.baseEndpoint}/${id}`);
+  }
+
+  // Check if supplier has references (products, purchase invoices)
+  async checkSupplierReferences(id: number): Promise<ApiResponse<{ hasReferences: boolean; message?: string }>> {
+    try {
+      // This will be implemented in backend later
+      return { success: true, data: { hasReferences: false } };
+    } catch (error) {
+      return { success: false, data: { hasReferences: false }, error: 'خطأ في التحقق من المراجع' };
+    }
   }
 }
 

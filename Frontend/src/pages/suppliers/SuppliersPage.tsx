@@ -1,231 +1,636 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { toast } from "sonner";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { RefreshCw, Search, Plus, Eye, Edit, Trash2, Building, Phone, Mail } from "lucide-react";
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
+import { RefreshCw, Search, Plus, Eye, Edit, Trash2, Building, Phone, Mail, MapPin, Calendar } from "lucide-react";
+import { supplierService, Supplier, CreateSupplierRequest } from "@/services/supplierService";
 
-interface Supplier {
-  id: string;
-  name: string;
-  contactPerson: string;
-  email: string;
-  phone: string;
-  address: string;
-  status: 'active' | 'inactive';
-  totalPurchases: number;
-  lastPurchaseDate: string;
-}
-
-const mockSuppliers: Supplier[] = [
-  {
-    id: "1",
-    name: "مورد الإلكترونيات الذهبية",
-    contactPerson: "أحمد السالم",
-    email: "ahmed@golden-electronics.com",
-    phone: "966501234567",
-    address: "الرياض، حي العليا",
-    status: 'active',
-    totalPurchases: 125000,
-    lastPurchaseDate: "2024-01-15"
-  },
-  {
-    id: "2",
-    name: "شركة التقنية المتقدمة",
-    contactPerson: "فاطمة أحمد",
-    email: "fatma@advanced-tech.com", 
-    phone: "966507654321",
-    address: "جدة، حي البوادي",
-    status: 'active',
-    totalPurchases: 89000,
-    lastPurchaseDate: "2024-01-12"
-  },
-  {
-    id: "3",
-    name: "مؤسسة الأجهزة الحديثة",
-    contactPerson: "محمد عبدالله",
-    email: "mohammed@modern-devices.com",
-    phone: "966551234567",
-    address: "الدمام، حي الخليج",
-    status: 'inactive',
-    totalPurchases: 67500,
-    lastPurchaseDate: "2023-12-20"
-  }
-];
-
-export function SuppliersPage() {
+function SuppliersPage() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
+  const [isEditDialogOpen, setIsEditDialogOpen] = useState(false);
+  const [isViewDialogOpen, setIsViewDialogOpen] = useState(false);
+  const [selectedSupplier, setSelectedSupplier] = useState<Supplier | null>(null);
+  const [formData, setFormData] = useState<CreateSupplierRequest>({
+    name: "",
+    phone: "",
+    email: "",
+    address: ""
+  });
 
-  const getStatusBadge = (status: string) => {
-    return status === 'active' 
-      ? { label: "نشط", variant: "default" as const }
-      : { label: "غير نشط", variant: "secondary" as const };
-  };
+  const queryClient = useQueryClient();
 
-  const filteredSuppliers = mockSuppliers.filter(supplier =>
+  // Fetch suppliers
+  const { data: suppliers = [], isLoading, error, refetch } = useQuery({
+    queryKey: ['suppliers'],
+    queryFn: async () => {
+      const response = await supplierService.getSuppliers();
+      if (!response.success) {
+        throw new Error(response.error || 'خطأ في تحميل الموردين');
+      }
+      return response.data;
+    },
+    retry: 3,
+    staleTime: 5 * 60 * 1000, // 5 minutes
+  });
+
+  // Create supplier mutation
+  const createSupplierMutation = useMutation({
+    mutationFn: async (supplierData: CreateSupplierRequest) => {
+      const response = await supplierService.createSupplier(supplierData);
+      if (!response.success) {
+        throw new Error(response.error || 'خطأ في إنشاء المورد');
+      }
+      return response.data;
+    },
+    onSuccess: () => {
+      toast.success("تم إنشاء المورد بنجاح");
+      queryClient.invalidateQueries({ queryKey: ['suppliers'] });
+      setIsCreateDialogOpen(false);
+      resetForm();
+    },
+    onError: (error: Error) => {
+      toast.error(error.message || "خطأ في إنشاء المورد");
+    }
+  });
+
+  // Update supplier mutation
+  const updateSupplierMutation = useMutation({
+    mutationFn: async ({ id, data }: { id: number; data: Partial<CreateSupplierRequest> }) => {
+      const response = await supplierService.updateSupplier(id, data);
+      if (!response.success) {
+        throw new Error(response.error || 'خطأ في تحديث المورد');
+      }
+      return response.data;
+    },
+    onSuccess: () => {
+      toast.success("تم تحديث المورد بنجاح");
+      queryClient.invalidateQueries({ queryKey: ['suppliers'] });
+      setIsEditDialogOpen(false);
+      resetForm();
+    },
+    onError: (error: Error) => {
+      toast.error(error.message || "خطأ في تحديث المورد");
+    }
+  });
+
+  // Delete supplier mutation
+  const deleteSupplierMutation = useMutation({
+    mutationFn: async (id: number) => {
+      const response = await supplierService.deleteSupplier(id);
+      if (!response.success) {
+        throw new Error(response.error || 'خطأ في حذف المورد');
+      }
+      return response.data;
+    },
+    onSuccess: () => {
+      toast.success("تم حذف المورد بنجاح");
+      queryClient.invalidateQueries({ queryKey: ['suppliers'] });
+    },
+    onError: (error: Error) => {
+      toast.error(error.message || "خطأ في حذف المورد");
+    }
+  });
+
+  // Filter suppliers based on search term
+  const filteredSuppliers = suppliers.filter(supplier =>
     supplier.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    supplier.contactPerson.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    supplier.email.toLowerCase().includes(searchTerm.toLowerCase())
+    supplier.email?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    supplier.phone?.includes(searchTerm)
   );
 
+  // Reset form
+  const resetForm = () => {
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      address: ""
+    });
+    setSelectedSupplier(null);
+  };
+
+  // Handle create supplier
+  const handleCreateSupplier = () => {
+    if (!formData.name.trim()) {
+      toast.error("اسم المورد مطلوب");
+      return;
+    }
+
+    createSupplierMutation.mutate(formData);
+  };
+
+  // Handle edit supplier
+  const handleEditSupplier = () => {
+    if (!selectedSupplier || !formData.name.trim()) {
+      toast.error("اسم المورد مطلوب");
+      return;
+    }
+
+    updateSupplierMutation.mutate({
+      id: selectedSupplier.id,
+      data: formData
+    });
+  };
+
+  // Handle delete supplier
+  const handleDeleteSupplier = (supplier: Supplier) => {
+    deleteSupplierMutation.mutate(supplier.id);
+  };
+
+  // Handle view supplier
+  const handleViewSupplier = (supplier: Supplier) => {
+    setSelectedSupplier(supplier);
+    setIsViewDialogOpen(true);
+  };
+
+  // Handle edit supplier
+  const handleEditSupplierClick = (supplier: Supplier) => {
+    setSelectedSupplier(supplier);
+    setFormData({
+      name: supplier.name,
+      phone: supplier.phone || "",
+      email: supplier.email || "",
+      address: supplier.address || ""
+    });
+    setIsEditDialogOpen(true);
+  };
+
+  // Format date
+  const formatDate = (dateString: string) => {
+    return new Date(dateString).toLocaleDateString('ar-SA', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  };
+
+  if (error) {
+    return (
+      <div className="flex items-center justify-center h-64">
+        <Card className="w-96">
+          <CardContent className="pt-6">
+            <div className="text-center">
+              <div className="text-red-500 mb-4">
+                <Building className="h-12 w-12 mx-auto" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">خطأ في تحميل الموردين</h3>
+              <p className="text-gray-600 mb-4">{error.message}</p>
+              <Button onClick={() => refetch()} variant="outline">
+                <RefreshCw className="h-4 w-4 mr-2" />
+                إعادة المحاولة
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
   return (
-    <div className="space-y-6 animate-fade-in rtl-layout">
+    <div className="space-y-6">
       {/* Header */}
-      <div className="flex justify-between items-center" dir="rtl">
-        <div className="text-right">
-          <h1 className="text-3xl font-bold text-foreground">إدارة الموردين</h1>
-          <p className="text-muted-foreground mt-2">
-            إدارة معلومات الموردين وتتبع المشتريات
-          </p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-3xl font-bold">إدارة الموردين</h1>
+          <p className="text-gray-600">إدارة معلومات الموردين والشركات</p>
         </div>
-        <Button className="flex items-center gap-2 hover:shadow-md transition-shadow" dir="rtl">
-          <Plus className="h-4 w-4" />
-          إضافة مورد جديد
+        <Button onClick={() => setIsCreateDialogOpen(true)} className="bg-blue-600 hover:bg-blue-700">
+          <Plus className="h-4 w-4 mr-2" />
+          مورد جديد
         </Button>
       </div>
 
-      {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6" dir="rtl">
-        <Card className="border-r-4 border-r-blue-500 hover:shadow-md transition-shadow">
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium text-muted-foreground text-right">
-              إجمالي الموردين
-            </CardTitle>
-            <CardDescription className="text-2xl font-bold text-foreground text-right">
-              {mockSuppliers.length}
-            </CardDescription>
+      {/* Statistics Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">إجمالي الموردين</CardTitle>
+            <Building className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
-        </Card>
-        
-        <Card className="border-r-4 border-r-green-500 hover:shadow-md transition-shadow">
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium text-muted-foreground text-right">
-              الموردين النشطين
-            </CardTitle>
-            <CardDescription className="text-2xl font-bold text-foreground text-right">
-              {mockSuppliers.filter(s => s.status === 'active').length}
-            </CardDescription>
-          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">{suppliers.length}</div>
+            <p className="text-xs text-muted-foreground">مورد نشط</p>
+          </CardContent>
         </Card>
 
-        <Card className="border-r-4 border-r-purple-500 hover:shadow-md transition-shadow">
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium text-muted-foreground text-right">
-              إجمالي المشتريات
-            </CardTitle>
-            <CardDescription className="text-2xl font-bold text-foreground text-right">
-              {mockSuppliers.reduce((sum, s) => sum + s.totalPurchases, 0).toLocaleString()} ر.س
-            </CardDescription>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">موردين جدد</CardTitle>
+            <Calendar className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">
+              {suppliers.filter(s => {
+                const createdDate = new Date(s.createdAt);
+                const today = new Date();
+                const diffTime = Math.abs(today.getTime() - createdDate.getTime());
+                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                return diffDays <= 30;
+              }).length}
+            </div>
+            <p className="text-xs text-muted-foreground">خلال آخر 30 يوم</p>
+          </CardContent>
         </Card>
 
-        <Card className="border-r-4 border-r-yellow-500 hover:shadow-md transition-shadow">
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium text-muted-foreground text-right">
-              متوسط المشتريات
-            </CardTitle>
-            <CardDescription className="text-2xl font-bold text-foreground text-right">
-              {Math.round(mockSuppliers.reduce((sum, s) => sum + s.totalPurchases, 0) / mockSuppliers.length).toLocaleString()} ر.س
-            </CardDescription>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">موردين مع إيميل</CardTitle>
+            <Mail className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">
+              {suppliers.filter(s => s.email && s.email.trim() !== '').length}
+            </div>
+            <p className="text-xs text-muted-foreground">لديهم بريد إلكتروني</p>
+          </CardContent>
         </Card>
       </div>
 
-      {/* Suppliers Table */}
-      <Card className="hover:shadow-md transition-shadow">
+      {/* Search and Actions */}
+      <Card>
         <CardHeader>
-          <div className="flex justify-between items-center" dir="rtl">
-            <CardTitle className="text-right flex items-center gap-2 justify-end">
-              <Building className="h-5 w-5" />
-              جميع الموردين
-            </CardTitle>
-            <div className="flex items-center gap-4" dir="rtl">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-4">
               <div className="relative">
-                <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
                 <Input
                   placeholder="البحث في الموردين..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="pr-10 text-right hover:border-primary focus:border-primary transition-colors w-64"
+                  className="pl-10 w-64"
                 />
               </div>
-              <Button variant="outline" size="icon" title="تحديث" className="hover:bg-accent">
-                <RefreshCw className="h-4 w-4" />
-              </Button>
             </div>
+            <Button onClick={() => refetch()} variant="outline" disabled={isLoading}>
+              <RefreshCw className={`h-4 w-4 mr-2 ${isLoading ? 'animate-spin' : ''}`} />
+              تحديث
+            </Button>
           </div>
         </CardHeader>
         <CardContent>
-          <Table dir="rtl" className="hover:bg-muted/50">
-            <TableHeader>
-              <TableRow className="hover:bg-muted/50">
-                <TableHead className="text-right font-semibold">الإجراءات</TableHead>
-                <TableHead className="text-right font-semibold">آخر شراء</TableHead>
-                <TableHead className="text-right font-semibold">إجمالي المشتريات</TableHead>
-                <TableHead className="text-right font-semibold">الحالة</TableHead>
-                <TableHead className="text-right font-semibold">العنوان</TableHead>
-                <TableHead className="text-right font-semibold">معلومات الاتصال</TableHead>
-                <TableHead className="text-right font-semibold">الشخص المسؤول</TableHead>
-                <TableHead className="text-right font-semibold">اسم المورد</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {filteredSuppliers.length === 0 ? (
+          {isLoading ? (
+            <div className="flex items-center justify-center h-32">
+              <RefreshCw className="h-6 w-6 animate-spin mr-2" />
+              <span>جاري تحميل الموردين...</span>
+            </div>
+          ) : (
+            <Table>
+              <TableHeader>
                 <TableRow>
-                  <TableCell colSpan={8} className="text-center py-8 text-muted-foreground">
-                    لا توجد موردين مطابقين للبحث
-                  </TableCell>
+                  <TableHead>اسم المورد</TableHead>
+                  <TableHead>الهاتف</TableHead>
+                  <TableHead>البريد الإلكتروني</TableHead>
+                  <TableHead>العنوان</TableHead>
+                  <TableHead>تاريخ الإنشاء</TableHead>
+                  <TableHead className="text-right">الإجراءات</TableHead>
                 </TableRow>
-              ) : (
-                filteredSuppliers.map((supplier) => (
-                  <TableRow key={supplier.id} className="hover:bg-muted/50 transition-colors">
-                    <TableCell>
-                      <div className="flex items-center gap-2 justify-end" dir="rtl">
-                        <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-accent" title="عرض التفاصيل">
-                          <Eye className="h-4 w-4" />
-                        </Button>
-                        <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-accent" title="تعديل">
-                          <Edit className="h-4 w-4" />
-                        </Button>
-                        <Button variant="ghost" size="icon" className="h-8 w-8 text-destructive hover:text-destructive hover:bg-destructive/10" title="حذف">
-                          <Trash2 className="h-4 w-4" />
-                        </Button>
+              </TableHeader>
+              <TableBody>
+                {filteredSuppliers.length === 0 ? (
+                  <TableRow>
+                    <TableCell colSpan={6} className="text-center py-8">
+                      <div className="text-gray-500">
+                        <Building className="h-12 w-12 mx-auto mb-4" />
+                        <p>لا توجد موردين</p>
+                        {searchTerm && <p className="text-sm">لم يتم العثور على موردين مطابقين للبحث</p>}
                       </div>
                     </TableCell>
-                    <TableCell className="text-right text-muted-foreground">{supplier.lastPurchaseDate}</TableCell>
-                    <TableCell className="text-right font-medium text-green-600">
-                      {supplier.totalPurchases.toLocaleString()} ر.س
-                    </TableCell>
-                    <TableCell className="text-right">
-                      <Badge variant={getStatusBadge(supplier.status).variant} className="font-medium">
-                        {getStatusBadge(supplier.status).label}
-                      </Badge>
-                    </TableCell>
-                    <TableCell className="text-right max-w-xs truncate text-muted-foreground">
-                      {supplier.address}
-                    </TableCell>
-                    <TableCell className="text-right">
-                      <div className="space-y-1">
-                        <div className="flex items-center gap-2 justify-end text-sm">
-                          <span className="text-blue-600">{supplier.phone}</span>
-                          <Phone className="h-3 w-3" />
-                        </div>
-                        <div className="flex items-center gap-2 justify-end text-sm">
-                          <span className="text-blue-600">{supplier.email}</span>
-                          <Mail className="h-3 w-3" />
-                        </div>
-                      </div>
-                    </TableCell>
-                    <TableCell className="text-right font-medium">{supplier.contactPerson}</TableCell>
-                    <TableCell className="text-right font-medium text-blue-600">{supplier.name}</TableCell>
                   </TableRow>
-                ))
-              )}
-            </TableBody>
-          </Table>
+                ) : (
+                  filteredSuppliers.map((supplier) => (
+                    <TableRow key={supplier.id}>
+                      <TableCell className="font-medium">
+                        <div className="flex items-center space-x-2">
+                          <Building className="h-4 w-4 text-gray-400" />
+                          <span>{supplier.name}</span>
+                        </div>
+                      </TableCell>
+                      <TableCell>
+                        {supplier.phone ? (
+                          <div className="flex items-center space-x-2">
+                            <Phone className="h-4 w-4 text-gray-400" />
+                            <span>{supplier.phone}</span>
+                          </div>
+                        ) : (
+                          <span className="text-gray-400">غير محدد</span>
+                        )}
+                      </TableCell>
+                      <TableCell>
+                        {supplier.email ? (
+                          <div className="flex items-center space-x-2">
+                            <Mail className="h-4 w-4 text-gray-400" />
+                            <span>{supplier.email}</span>
+                          </div>
+                        ) : (
+                          <span className="text-gray-400">غير محدد</span>
+                        )}
+                      </TableCell>
+                      <TableCell>
+                        {supplier.address ? (
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="h-4 w-4 text-gray-400" />
+                            <span className="max-w-32 truncate">{supplier.address}</span>
+                          </div>
+                        ) : (
+                          <span className="text-gray-400">غير محدد</span>
+                        )}
+                      </TableCell>
+                      <TableCell>
+                        <div className="flex items-center space-x-2">
+                          <Calendar className="h-4 w-4 text-gray-400" />
+                          <span>{formatDate(supplier.createdAt)}</span>
+                        </div>
+                      </TableCell>
+                      <TableCell className="text-right">
+                        <div className="flex items-center justify-end space-x-2">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => handleViewSupplier(supplier)}
+                          >
+                            <Eye className="h-4 w-4" />
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => handleEditSupplierClick(supplier)}
+                          >
+                            <Edit className="h-4 w-4" />
+                          </Button>
+                          <AlertDialog>
+                            <AlertDialogTrigger asChild>
+                              <Button variant="outline" size="sm" className="text-red-600 hover:text-red-700">
+                                <Trash2 className="h-4 w-4" />
+                              </Button>
+                            </AlertDialogTrigger>
+                            <AlertDialogContent>
+                              <AlertDialogHeader>
+                                <AlertDialogTitle>تأكيد الحذف</AlertDialogTitle>
+                                <AlertDialogDescription>
+                                  هل أنت متأكد من حذف المورد "{supplier.name}"؟ 
+                                  <br />
+                                  <span className="text-red-600 font-semibold">هذا الإجراء لا يمكن التراجع عنه.</span>
+                                </AlertDialogDescription>
+                              </AlertDialogHeader>
+                              <AlertDialogFooter>
+                                <AlertDialogCancel>إلغاء</AlertDialogCancel>
+                                <AlertDialogAction
+                                  onClick={() => handleDeleteSupplier(supplier)}
+                                  className="bg-red-600 hover:bg-red-700"
+                                  disabled={deleteSupplierMutation.isPending}
+                                >
+                                  {deleteSupplierMutation.isPending ? "جاري الحذف..." : "حذف"}
+                                </AlertDialogAction>
+                              </AlertDialogFooter>
+                            </AlertDialogContent>
+                          </AlertDialog>
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                  ))
+                )}
+              </TableBody>
+            </Table>
+          )}
         </CardContent>
       </Card>
+
+      {/* Create Supplier Dialog */}
+      <Dialog open={isCreateDialogOpen} onOpenChange={setIsCreateDialogOpen}>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle>إضافة مورد جديد</DialogTitle>
+            <DialogDescription>
+              أدخل معلومات المورد الجديد
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-4">
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="name" className="text-right">
+                اسم المورد *
+              </Label>
+              <Input
+                id="name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                className="col-span-3"
+                placeholder="أدخل اسم المورد"
+              />
+            </div>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="phone" className="text-right">
+                الهاتف
+              </Label>
+              <Input
+                id="phone"
+                value={formData.phone}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                className="col-span-3"
+                placeholder="أدخل رقم الهاتف"
+              />
+            </div>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="email" className="text-right">
+                البريد الإلكتروني
+              </Label>
+              <Input
+                id="email"
+                type="email"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                className="col-span-3"
+                placeholder="أدخل البريد الإلكتروني"
+              />
+            </div>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="address" className="text-right">
+                العنوان
+              </Label>
+              <Textarea
+                id="address"
+                value={formData.address}
+                onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+                className="col-span-3"
+                placeholder="أدخل العنوان"
+                rows={3}
+              />
+            </div>
+          </div>
+          <DialogFooter>
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => {
+                setIsCreateDialogOpen(false);
+                resetForm();
+              }}
+            >
+              إلغاء
+            </Button>
+            <Button
+              type="button"
+              onClick={handleCreateSupplier}
+              disabled={createSupplierMutation.isPending}
+            >
+              {createSupplierMutation.isPending ? "جاري الإنشاء..." : "إنشاء"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Edit Supplier Dialog */}
+      <Dialog open={isEditDialogOpen} onOpenChange={setIsEditDialogOpen}>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle>تعديل المورد</DialogTitle>
+            <DialogDescription>
+              تعديل معلومات المورد
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-4">
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="edit-name" className="text-right">
+                اسم المورد *
+              </Label>
+              <Input
+                id="edit-name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                className="col-span-3"
+                placeholder="أدخل اسم المورد"
+              />
+            </div>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="edit-phone" className="text-right">
+                الهاتف
+              </Label>
+              <Input
+                id="edit-phone"
+                value={formData.phone}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                className="col-span-3"
+                placeholder="أدخل رقم الهاتف"
+              />
+            </div>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="edit-email" className="text-right">
+                البريد الإلكتروني
+              </Label>
+              <Input
+                id="edit-email"
+                type="email"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                className="col-span-3"
+                placeholder="أدخل البريد الإلكتروني"
+              />
+            </div>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="edit-address" className="text-right">
+                العنوان
+              </Label>
+              <Textarea
+                id="edit-address"
+                value={formData.address}
+                onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+                className="col-span-3"
+                placeholder="أدخل العنوان"
+                rows={3}
+              />
+            </div>
+          </div>
+          <DialogFooter>
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => {
+                setIsEditDialogOpen(false);
+                resetForm();
+              }}
+            >
+              إلغاء
+            </Button>
+            <Button
+              type="button"
+              onClick={handleEditSupplier}
+              disabled={updateSupplierMutation.isPending}
+            >
+              {updateSupplierMutation.isPending ? "جاري التحديث..." : "تحديث"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* View Supplier Dialog */}
+      <Dialog open={isViewDialogOpen} onOpenChange={setIsViewDialogOpen}>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle>تفاصيل المورد</DialogTitle>
+            <DialogDescription>
+              عرض معلومات المورد
+            </DialogDescription>
+          </DialogHeader>
+          {selectedSupplier && (
+            <div className="grid gap-4 py-4">
+              <div className="grid grid-cols-4 items-center gap-4">
+                <Label className="text-right font-semibold">اسم المورد</Label>
+                <div className="col-span-3 flex items-center space-x-2">
+                  <Building className="h-4 w-4 text-gray-400" />
+                  <span>{selectedSupplier.name}</span>
+                </div>
+              </div>
+              <div className="grid grid-cols-4 items-center gap-4">
+                <Label className="text-right font-semibold">الهاتف</Label>
+                <div className="col-span-3 flex items-center space-x-2">
+                  <Phone className="h-4 w-4 text-gray-400" />
+                  <span>{selectedSupplier.phone || "غير محدد"}</span>
+                </div>
+              </div>
+              <div className="grid grid-cols-4 items-center gap-4">
+                <Label className="text-right font-semibold">البريد الإلكتروني</Label>
+                <div className="col-span-3 flex items-center space-x-2">
+                  <Mail className="h-4 w-4 text-gray-400" />
+                  <span>{selectedSupplier.email || "غير محدد"}</span>
+                </div>
+              </div>
+              <div className="grid grid-cols-4 items-center gap-4">
+                <Label className="text-right font-semibold">العنوان</Label>
+                <div className="col-span-3 flex items-center space-x-2">
+                  <MapPin className="h-4 w-4 text-gray-400" />
+                  <span>{selectedSupplier.address || "غير محدد"}</span>
+                </div>
+              </div>
+              <div className="grid grid-cols-4 items-center gap-4">
+                <Label className="text-right font-semibold">تاريخ الإنشاء</Label>
+                <div className="col-span-3 flex items-center space-x-2">
+                  <Calendar className="h-4 w-4 text-gray-400" />
+                  <span>{formatDate(selectedSupplier.createdAt)}</span>
+                </div>
+              </div>
+            </div>
+          )}
+          <DialogFooter>
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => setIsViewDialogOpen(false)}
+            >
+              إغلاق
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
+
+export default SuppliersPage;

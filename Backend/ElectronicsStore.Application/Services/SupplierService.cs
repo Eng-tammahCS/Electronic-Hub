@@ -46,12 +46,26 @@ public class SupplierService : ISupplierService
 
     public async Task<SupplierDto> CreateSupplierAsync(CreateSupplierDto createSupplierDto)
     {
+        // Validation
+        if (string.IsNullOrWhiteSpace(createSupplierDto.Name))
+        {
+            throw new ArgumentException("اسم المورد مطلوب");
+        }
+
+        // Check if supplier name already exists
+        var existingSupplier = await _unitOfWork.Suppliers.GetAllAsync();
+        var duplicateSupplier = existingSupplier.FirstOrDefault(s => s.Name == createSupplierDto.Name);
+        if (duplicateSupplier != null)
+        {
+            throw new InvalidOperationException("يوجد مورد بنفس الاسم بالفعل");
+        }
+
         var supplier = new Supplier
         {
-            Name = createSupplierDto.Name,
-            Phone = createSupplierDto.Phone,
-            Email = createSupplierDto.Email,
-            Address = createSupplierDto.Address
+            Name = createSupplierDto.Name.Trim(),
+            Phone = createSupplierDto.Phone?.Trim(),
+            Email = createSupplierDto.Email?.Trim(),
+            Address = createSupplierDto.Address?.Trim()
         };
 
         var createdSupplier = await _unitOfWork.Suppliers.AddAsync(supplier);
@@ -72,12 +86,26 @@ public class SupplierService : ISupplierService
     {
         var supplier = await _unitOfWork.Suppliers.GetByIdAsync(updateSupplierDto.Id);
         if (supplier == null)
-            throw new ArgumentException("Supplier not found");
+            throw new ArgumentException("المورد غير موجود");
 
-        supplier.Name = updateSupplierDto.Name;
-        supplier.Phone = updateSupplierDto.Phone;
-        supplier.Email = updateSupplierDto.Email;
-        supplier.Address = updateSupplierDto.Address;
+        // Validation
+        if (string.IsNullOrWhiteSpace(updateSupplierDto.Name))
+        {
+            throw new ArgumentException("اسم المورد مطلوب");
+        }
+
+        // Check if supplier name already exists (excluding current supplier)
+        var allSuppliers = await _unitOfWork.Suppliers.GetAllAsync();
+        var existingSupplier = allSuppliers.FirstOrDefault(s => s.Name == updateSupplierDto.Name && s.Id != updateSupplierDto.Id);
+        if (existingSupplier != null)
+        {
+            throw new InvalidOperationException("يوجد مورد بنفس الاسم بالفعل");
+        }
+
+        supplier.Name = updateSupplierDto.Name.Trim();
+        supplier.Phone = updateSupplierDto.Phone?.Trim();
+        supplier.Email = updateSupplierDto.Email?.Trim();
+        supplier.Address = updateSupplierDto.Address?.Trim();
 
         var updatedSupplier = await _unitOfWork.Suppliers.UpdateAsync(supplier);
         await _unitOfWork.SaveChangesAsync();
@@ -97,6 +125,22 @@ public class SupplierService : ISupplierService
     {
         var supplier = await _unitOfWork.Suppliers.GetByIdAsync(id);
         if (supplier == null) return false;
+
+        // Check if supplier has references in products
+        var allProducts = await _unitOfWork.Products.GetAllAsync();
+        var hasProducts = allProducts.Any(p => p.SupplierId == id);
+        if (hasProducts)
+        {
+            throw new InvalidOperationException("لا يمكن حذف هذا المورد لأنه مرتبط بمنتجات موجودة");
+        }
+
+        // Check if supplier has references in purchase invoices
+        var allPurchaseInvoices = await _unitOfWork.PurchaseInvoices.GetAllAsync();
+        var hasPurchaseInvoices = allPurchaseInvoices.Any(pi => pi.SupplierId == id);
+        if (hasPurchaseInvoices)
+        {
+            throw new InvalidOperationException("لا يمكن حذف هذا المورد لأنه مرتبط بفواتير شراء موجودة");
+        }
 
         await _unitOfWork.Suppliers.DeleteAsync(supplier);
         await _unitOfWork.SaveChangesAsync();

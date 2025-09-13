@@ -140,7 +140,11 @@ public class ProductsController : ControllerBase
             {
                 return NotFound(new { message = "المنتج غير موجود" });
             }
-            return NoContent();
+            return Ok(new { message = "تم حذف المنتج بنجاح" });
+        }
+        catch (InvalidOperationException ex)
+        {
+            return BadRequest(new { message = ex.Message });
         }
         catch (Exception ex)
         {
