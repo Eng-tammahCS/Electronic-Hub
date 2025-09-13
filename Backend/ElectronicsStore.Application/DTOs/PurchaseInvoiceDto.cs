@@ -38,3 +38,13 @@ public class CreatePurchaseInvoiceDetailDto
     public int Quantity { get; set; }
     public decimal UnitCost { get; set; }
 }
+
+public class UpdatePurchaseInvoiceDto
+{
+    public int Id { get; set; }
+    public string InvoiceNumber { get; set; } = string.Empty;
+    public int SupplierId { get; set; }
+    public DateTime InvoiceDate { get; set; }
+    public decimal TotalAmount { get; set; }
+    public List<CreatePurchaseInvoiceDetailDto> Details { get; set; } = new();
+}

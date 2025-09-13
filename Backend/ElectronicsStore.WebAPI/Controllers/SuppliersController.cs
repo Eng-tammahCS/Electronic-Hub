@@ -55,6 +55,14 @@ public class SuppliersController : ControllerBase
             var supplier = await _supplierService.CreateSupplierAsync(createSupplierDto);
             return CreatedAtAction(nameof(GetSupplier), new { id = supplier.Id }, supplier);
         }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
+        catch (InvalidOperationException ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
         catch (Exception ex)
         {
             return BadRequest(new { message = "خطأ في إنشاء المورد", error = ex.Message });
@@ -64,19 +72,21 @@ public class SuppliersController : ControllerBase
     [HttpPut("{id}")]
     public async Task<ActionResult<SupplierDto>> UpdateSupplier(int id, UpdateSupplierDto updateSupplierDto)
     {
-        if (id != updateSupplierDto.Id)
-        {
-            return BadRequest(new { message = "معرف المورد غير متطابق" });
-        }
+        // Set the ID from the URL parameter to ensure consistency
+        updateSupplierDto.Id = id;
 
         try
         {
             var supplier = await _supplierService.UpdateSupplierAsync(updateSupplierDto);
             return Ok(supplier);
         }
-        catch (ArgumentException)
+        catch (ArgumentException ex)
         {
-            return NotFound(new { message = "المورد غير موجود" });
+            return BadRequest(new { message = ex.Message });
+        }
+        catch (InvalidOperationException ex)
+        {
+            return BadRequest(new { message = ex.Message });
         }
         catch (Exception ex)
         {
@@ -94,7 +104,11 @@ public class SuppliersController : ControllerBase
             {
                 return NotFound(new { message = "المورد غير موجود" });
             }
-            return NoContent();
+            return Ok(new { message = "تم حذف المورد بنجاح" });
+        }
+        catch (InvalidOperationException ex)
+        {
+            return BadRequest(new { message = ex.Message });
         }
         catch (Exception ex)
         {

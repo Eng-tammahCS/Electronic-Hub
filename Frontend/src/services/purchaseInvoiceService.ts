@@ -79,6 +79,27 @@ class PurchaseInvoiceService {
   async getPurchaseInvoicesBySupplier(supplierId: number): Promise<ApiResponse<PurchaseInvoice[]>> {
     return apiService.get<PurchaseInvoice[]>(`${this.baseEndpoint}/supplier/${supplierId}`);
   }
+
+  // Get purchase statistics
+  async getPurchaseStatistics(): Promise<ApiResponse<{
+    totalInvoices: number;
+    totalAmount: number;
+    completedInvoices: number;
+    pendingInvoices: number;
+    averageAmount: number;
+    thisMonthCount: number;
+    thisMonthAmount: number;
+  }>> {
+    return apiService.get<{
+      totalInvoices: number;
+      totalAmount: number;
+      completedInvoices: number;
+      pendingInvoices: number;
+      averageAmount: number;
+      thisMonthCount: number;
+      thisMonthAmount: number;
+    }>(`${this.baseEndpoint}/statistics`);
+  }
 }
 
 export const purchaseInvoiceService = new PurchaseInvoiceService();

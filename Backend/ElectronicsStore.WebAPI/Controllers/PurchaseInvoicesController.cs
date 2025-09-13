@@ -61,6 +61,44 @@ public class PurchaseInvoicesController : ControllerBase
         }
     }
 
+    [HttpGet("statistics")]
+    public async Task<ActionResult<object>> GetPurchaseStatistics()
+    {
+        try
+        {
+            var invoices = await _purchaseInvoiceService.GetAllPurchaseInvoicesAsync();
+            var invoiceList = invoices.ToList();
+
+            var totalInvoices = invoiceList.Count;
+            var totalAmount = invoiceList.Sum(i => i.TotalAmount);
+            var completedInvoices = invoiceList.Count(i => (DateTime.Now - i.InvoiceDate).TotalDays > 1);
+            var pendingInvoices = totalInvoices - completedInvoices;
+            var averageAmount = totalInvoices > 0 ? totalAmount / totalInvoices : 0;
+
+            // This month statistics
+            var thisMonth = DateTime.Now.Month;
+            var thisYear = DateTime.Now.Year;
+            var thisMonthInvoices = invoiceList.Where(i => i.InvoiceDate.Month == thisMonth && i.InvoiceDate.Year == thisYear).ToList();
+            var thisMonthCount = thisMonthInvoices.Count;
+            var thisMonthAmount = thisMonthInvoices.Sum(i => i.TotalAmount);
+
+            return Ok(new
+            {
+                totalInvoices,
+                totalAmount,
+                completedInvoices,
+                pendingInvoices,
+                averageAmount,
+                thisMonthCount,
+                thisMonthAmount
+            });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { message = "خطأ في تحميل الإحصائيات", error = ex.Message });
+        }
+    }
+
     [HttpGet("date-range")]
     public async Task<ActionResult<IEnumerable<PurchaseInvoiceDto>>> GetPurchaseInvoicesByDateRange(
         [FromQuery] DateTime startDate, 
@@ -91,6 +129,31 @@ public class PurchaseInvoicesController : ControllerBase
         catch (Exception ex)
         {
             return BadRequest(new { message = "خطأ في إنشاء فاتورة الشراء", error = ex.Message });
+        }
+    }
+
+    [HttpPut("{id}")]
+    public async Task<ActionResult<PurchaseInvoiceDto>> UpdatePurchaseInvoice(int id, UpdatePurchaseInvoiceDto updatePurchaseInvoiceDto)
+    {
+        try
+        {
+            // Set the ID from the URL parameter to ensure consistency
+            updatePurchaseInvoiceDto.Id = id;
+            
+            var invoice = await _purchaseInvoiceService.UpdatePurchaseInvoiceAsync(updatePurchaseInvoiceDto);
+            return Ok(invoice);
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
+        catch (InvalidOperationException ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { message = "خطأ في تحديث فاتورة الشراء", error = ex.Message });
         }
     }
 
