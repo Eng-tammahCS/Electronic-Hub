@@ -1,0 +1,6 @@
+{
+  "ElectronicsStore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Application",
+  "ElectronicsStore.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Domain",
+  "ElectronicsStore.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Infrastructure",
+  "ElectronicsStore.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.WebAPI"
+}

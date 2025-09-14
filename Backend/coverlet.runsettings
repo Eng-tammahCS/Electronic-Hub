@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <DataCollectorConfiguration>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat code coverage">
+        <Configuration>
+          <Format>json,cobertura,lcov,teamcity,opencover</Format>
+          <ExcludeByAttribute>Obsolete,GeneratedCodeAttribute,CompilerGeneratedAttribute</ExcludeByAttribute>
+          <ExcludeByFile>**/Program.cs,**/Startup.cs,**/Migrations/**,**/obj/**</ExcludeByFile>
+          <Include>[ElectronicsStore.Application]*</Include>
+          <Include>[ElectronicsStore.Domain]*</Include>
+          <Exclude>[ElectronicsStore.Tests]*</Exclude>
+          <SkipAutoProps>true</SkipAutoProps>
+          <DeterministicReport>true</DeterministicReport>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectorConfiguration>
+</RunSettings>
