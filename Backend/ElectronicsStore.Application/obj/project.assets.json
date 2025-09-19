@@ -475,19 +475,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tamma\\.nuget\\packages\\": {}
+    "C:\\Users\\azam\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
+      "projectUniqueName": "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
       "projectName": "ElectronicsStore.Application",
-      "projectPath": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
-      "packagesPath": "C:\\Users\\Tamma\\.nuget\\packages\\",
-      "outputPath": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\obj\\",
+      "projectPath": "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\ElectronicsStore.Application.csproj",
+      "packagesPath": "C:\\Users\\azam\\.nuget\\packages\\",
+      "outputPath": "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Tamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\azam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -501,8 +506,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
-              "projectPath": "E:\\Elproject\\project_v4.2\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj"
+            "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj": {
+              "projectPath": "F:\\مشاريع\\GithubClone\\Electronic-Hub\\Backend\\ElectronicsStore.Domain\\ElectronicsStore.Domain.csproj"
             }
           }
         }

@@ -1,0 +1,120 @@
+version: '3.8'
+
+services:
+  # SQL Server Database
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: electronic-hub-db
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong@Passw0rd
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - electronic-hub-network
+    restart: unless-stopped
+
+  # Backend API
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    container_name: electronic-hub-backend
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=ElectronicHub;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true;
+      - JWT__SecretKey=YourSuperSecretKeyHere123456789
+      - JWT__Issuer=ElectronicHub
+      - JWT__Audience=ElectronicHub
+      - JWT__ExpiryInMinutes=60
+    ports:
+      - "5000:80"
+    depends_on:
+      - sqlserver
+    networks:
+      - electronic-hub-network
+    restart: unless-stopped
+
+  # Frontend
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    container_name: electronic-hub-frontend
+    environment:
+      - VITE_API_URL=http://localhost:5000
+      - VITE_ML_SERVICE_URL=http://localhost:5001
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - electronic-hub-network
+    restart: unless-stopped
+
+  # ML Service
+  ml-service:
+    build:
+      context: ./ServiceML
+      dockerfile: Dockerfile
+    container_name: electronic-hub-ml
+    environment:
+      - FLASK_ENV=production
+      - FLASK_APP=api.py
+    ports:
+      - "5001:5000"
+    volumes:
+      - ml_models:/app/modelAI
+      - ml_data:/app/data
+    networks:
+      - electronic-hub-network
+    restart: unless-stopped
+
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: electronic-hub-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    depends_on:
+      - frontend
+      - backend
+      - ml-service
+    networks:
+      - electronic-hub-network
+    restart: unless-stopped
+
+  # Redis Cache (Optional)
+  redis:
+    image: redis:alpine
+    container_name: electronic-hub-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - electronic-hub-network
+    restart: unless-stopped
+
+volumes:
+  sqlserver_data:
+    driver: local
+  ml_models:
+    driver: local
+  ml_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  electronic-hub-network:
+    driver: bridge
+
+
