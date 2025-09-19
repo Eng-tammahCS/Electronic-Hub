@@ -262,8 +262,8 @@ Electronic-Hub/
 - **Azam Abo Abdallah** - توثيق المشروع، هندسة المشروع، التصميم المعماري
 
 ### 📧 للتواصل مع الفريق
-- **Email**: [team@electronichub.com](mailto:team@electronichub.com)
-- **GitHub**: [Electronic Hub Team](https://github.com/Electronic-Hub-Team)
+- **Email**: [eng.tammah@gmail.com](eng.tammah@gmail.com)
+- **GitHub**: [Electronic Hub Team](https://github.com/Electronic-Hub)
 
 ---
 
